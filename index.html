@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Låfteweb | Hjem</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/lafte.ico"/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div class="heading-logo-container">
+                <img src="assets/img/låfte_lysbakgrunn.png" alt="Logo til Låfteweb" width="70" height="70">
+            </div>
+            <div class="heading-text">
+                <h1>Studentersamfundets Orkester</h1>
+                <!-- TODO: Get the name and phonenumber (and email) dynamically from somewhere else -->
+                <p>Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav class="nav-web">
+                <a href="" class="selected">Hjem</a>
+                <a href="#">Opptak</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Om</a>
+                <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
+            </nav>
+            <div class="hamburger hamburger--slider toggle-navbar">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-mobile">
+        <a href="" class="selected">Hjem</a>
+        <a href="#">Opptak</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Om</a>
+        <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
+    </nav>
+    <main></main>
+    <footer></footer>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".toggle-navbar").click(function(){
+                $(".nav-mobile").toggleClass("activate-hamburger");
+                $(".hamburger").toggleClass("is-active");
+            })
+        })
+    </script>
+</body>
+</html>
