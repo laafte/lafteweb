@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Låfteweb | Opptak</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/lafte.ico"/>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/hamburger.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/recruitment.css">
+</head>
+<body>
+    <header>
+        <div class="header-heading">
+            <div class="header-heading-logo-container">
+                <img src="../assets/img/låfte_lysbakgrunn.png" alt="Logo til Låfteweb" width="70" height="70">
+            </div>
+            <div class="header-text">
+                <h1>Studentersamfundets Orkester</h1>
+                <!-- TODO: Get the name and phonenumber (and email) dynamically from somewhere else -->
+                <p>Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav class="nav-web">
+                <a href="../index.html">Hjem</a>
+                <a href="#" class="selected">Opptak</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Om</a>
+                <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
+            </nav>
+            <div class="hamburger hamburger--slider toggle-navbar">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-mobile">
+            <a href="../index.html">Hjem</a>
+            <a href="#" class="selected">Opptak</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Om</a>
+            <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
+        </nav>
+    <main>
+        <div class="recruitment-heading-box">
+            <h1 class="recruit-heading">Opptak</h1>
+            <p>Her finner du informasjon om hvilke undergrupperinger som har opptak og hvilke instrumenter som søkes.</p>
+        </div>
+        <div class="band"> <!-- Kjellerbandet -->
+            <h2>Kjellerbandet</h2>
+            <h4>Faste plasser</h4>
+            <!-- TODO Get the available seats -->
+            <h4>Vikarplasser</h4>
+            <!-- TODO Get the available temp seats -->
+            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        </div>
+        <div class="band"> <!-- LSL -->
+            <h2>Leisure Suite Lovers</h2>
+            <h4>Faste plasser</h4>
+            <!-- TODO Get the available seats -->
+            <h4>Vikarplasser</h4>
+            <!-- TODO Get the available temp seats -->
+            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        </div>
+        <div class="band"> <!-- SMoller -->
+            <h2>S. Møller Storband</h2>
+            <h4>Faste plasser</h4>
+            <!-- TODO Get the available seats -->
+            <h4>Vikarplasser</h4>
+            <!-- TODO Get the available temp seats -->
+            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        </div>
+        <div class="band"> <!-- Snau -->
+            <h2>Snaustrinda Spelemannslag</h2>
+            <h4>Faste plasser</h4>
+            <!-- TODO Get the available seats -->
+            <h4>Vikarplasser</h4>
+            <!-- TODO Get the available temp seats -->
+            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        </div>
+        <div class="band"> <!-- Salongen -->
+            <h2>Studentersamfundets Salongorkester</h2>
+            <h4>Faste plasser</h4>
+            <!-- TODO Get the available seats -->
+            <h4>Vikarplasser</h4>
+            <!-- TODO Get the available temp seats -->
+            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        </div>
+        <div class="band"> <!-- Symforch -->
+            <h2>Studentersamfundets Symfoniorkester</h2>
+            <h4>Faste plasser</h4>
+            <!-- TODO Get the available seats -->
+            <h4>Vikarplasser</h4>
+            <!-- TODO Get the available temp seats -->
+            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        </div>
+    </main>
+    <footer>
+        <p class="leader-info">Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+        <p> &copy; låfteweb 2019</p>
+        <p>www.samfundet.no</p>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".toggle-navbar").click(function(){
+                $(".nav-mobile").toggleClass("activate-hamburger");
+                $(".hamburger").toggleClass("is-active");
+            })
+        })
+    </script>
+</body>
+</html>
