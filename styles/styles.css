@@ -1,8 +1,17 @@
+/* 
+This file contains the common styles for every page.
+Header styles, footer styles, fonts etc.
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* General styles */
 
 body{
     background-color: #f8f8f8;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -11,30 +20,24 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #F8F8F8;
-    padding: 5px 30px;
     box-shadow: 0 1px 6px #cccccc;
 }
 
-.heading{
+.header-heading{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.heading-logo-container{
-    margin-right: 30px;
-}
-
-.heading-text h1{
+.header-text h1{
     margin: 0;
     font-weight: 400;
 }
 
-.heading-text p{
+.header-text p{
     margin: 0;
     color: #555555;
-    font-size: 10pt;
 }
 
 .navigation{
@@ -42,20 +45,15 @@ header{
     flex-direction: row;
 }
 
-.navigation nav a{
-    margin: 0 15px;
-    padding: 0 3px 5px;
-    text-decoration: none;
-    
-}
-
 .navigation nav a:hover{
     opacity: 0.7;
     cursor: pointer;
 }
 
-nav.nav-mobile{
-    display: none;
+.navigation nav a{
+    margin: 0 15px;
+    padding: 0 3px 5px;
+    text-decoration: none; 
 }
 
 nav a.selected{
@@ -71,57 +69,184 @@ nav a.selected{
     display: none;
 }
 
-@media (max-width: 600px){
+main{
+    flex: 1 0 auto;
+}
+
+footer{
+    color: whitesmoke;
+    background-color: #343434;
+    flex-shrink: 0;
+}
+
+footer p{
+    text-align: center;
+    margin: 0;
+}
+
+.activate-hamburger{
+    display: flex !important;
+}
+
+
+/* Smartphones, portrait */
+
+header{
+    padding: 10px 2px;
+}
+
+.header-text h1{
+    font-size: 12pt;
+}
+
+.header-text p{
+    display: none;
+}
+
+.header-heading-logo-container{
+    margin-right: 10px;
+}
+
+.header-heading-logo-container img{
+    width: 30px;
+    height: 30px;
+}
+
+.toggle-navbar{
+    display: block;
+}
+
+.hamburger-box{
+    transform: scale(0.7)
+}
+
+nav.nav-web{
+    display: none;
+}
+
+nav.nav-mobile{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 10px 0;
+}
+
+nav.nav-mobile a{
+    margin: 5px;
+    text-decoration: none;
+}
+
+footer{
+    padding: 8px;
+}
+
+footer p{
+    font-size: 6pt;
+}
+
+footer .leader-info{
+    margin-bottom: 10px;
+}
+
+/* Smartphones, landscape */
+
+@media only screen and (min-width: 500px){
     header{
         padding: 10px 5px;
     }
-    .heading-text h1{
-        font-size: 13pt;
+    
+    .header-text h1{
+        font-size: 16pt;
     }
 
-    .heading-text p{
-        display: none;
+    .header-text p{
+        display: block;
+        font-size: 8pt;
     }
 
-    .heading-logo-container{
+    .header-heading-logo-container{
         margin-right: 10px;
     }
 
-    .heading-logo-container img{
-        width: 30px;
-        height: 30px;
+    .header-heading-logo-container img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .hamburger-box{
+        transform: scale(0.9)
+    }
+
+    footer p{
+        font-size: 8pt;
+    }
+
+    footer .leader-info{
+        display: none;
+    }
+}
+
+/* Tablets, portrait */
+
+@media only screen and (min-width: 768px) {
+
+    header{ 
+        padding: 5px 30px;
+    }
+
+    .header-heading-logo-container{
+        margin-right: 30px;
+    }
+
+    .header-heading-logo-container img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-text h1{
+        font-size: 24pt;
+    }
+
+    .header-text p{
+        font-size: 9pt;
     }
 
 }
 
-@media (max-width: 1147px){
+/* Tablets, landscape */
+
+@media only screen and (min-width: 1050px) {
     .toggle-navbar{
-        display: block;
+        display: none;
     }
 
     nav.nav-web{
-        display: none;
-    }
-
-    nav.nav-mobile{
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #eeeeee;
-        padding: 10px 0;
-    }
-
-    nav.nav-mobile a{
-        margin: 10px;
-        text-decoration: none;
-    }
-
-    .activate-hamburger{
-        display: flex !important;
+        display: block;
     }
     
+    nav.nav-mobile{
+        display: none;
+    }
+
 }
+
+
+
+/* Laptops and desktops */
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1600px) {
+
+}
+
+
 
 
 

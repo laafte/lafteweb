@@ -1,0 +1,267 @@
+/* General styles */
+/* 
+Things like background color, font-family etc.
+Common styles regardless of screen size.
+*/
+
+/* Smartphones, portrait */
+
+/* No media query, design for small phones first, then change CSS once screen gets bigger */
+
+main {
+    margin: 10px 30px 50px;
+}
+
+.recruitment-heading-box {
+    margin-bottom: 6px;
+}
+
+.recruit-heading{
+    font-size: 30pt;
+    margin-bottom: 0;
+}
+
+.recruitment-heading-box p {
+    font-size: 11pt;
+    padding: 0;
+}
+
+.band {
+    margin-top: 60px;
+}
+
+.band h2 {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.band h4 {
+    font-weight: 5;
+    font-size: 9pt;
+    margin-top: 1; 
+    padding-bottom: 1,
+}
+
+.band p {
+    font-size: 8pt;
+}
+
+/* Smartphones, landscape */
+
+@media only screen and (min-width: 500px){
+
+    main {
+        margin: 10px 50px 50px;
+    }
+
+}
+
+/* Tablets, portrait */
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        margin: 20px 100px 50px;
+    }
+    
+    .recruitment-heading-box {
+        margin-bottom: 35px;
+    }
+    
+    .recruit-heading{
+        font-size: 35pt;
+    }
+    
+    .recruitment-heading-box p {
+        font-size: 13pt;
+    }
+    
+    .band {
+        margin-top: 60px;
+    }
+    
+    .band h2 {
+        font-size: 20pt;
+    }
+    
+    .band h4 {
+        font-size: 11pt;
+    }
+    
+}
+
+
+/* Tablets, landscape */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Laptops and desktops */
+
+@media only screen and (min-width: 1200px) {
+    main {
+        margin: 50px 130px;
+    }
+    
+    .recruitment-heading-box {
+        margin-bottom: 50px;
+    }
+    
+    .recruit-heading{
+        font-size: 55pt;
+    }
+    
+    .recruitment-heading-box p {
+        font-size: 20pt;
+    }
+    
+    .band {
+        margin-top: 60px;
+    }
+    
+    .band h2 {
+        font-weight: bolder;
+        font-size: 30pt;
+    }
+    
+    .band h4 {
+        font-size: 16pt;
+    }
+    
+    .band p {
+        font-size: 14pt;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1600px) {
+    
+}
+
+
+
+/* Styling for the recruitment page
+
+main {
+    margin: 50px 130px;
+}
+
+.recruitment-heading-box {
+    margin-bottom: 50px;
+}
+
+.recruit-heading{
+    font-size: 55pt;
+    font-weight: 1;
+    margin-bottom: 0;
+}
+
+.recruitment-heading-box p {
+    font-size: 20;
+    padding: 0;
+}
+
+.band {
+    margin-top: 60px;
+}
+
+.band h2 {
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+.band h4 {
+    font-weight: 5;
+    font-size: 16pt;
+    margin-top: 1; 
+    padding-bottom: 1,
+}
+
+.band p {
+    font-size: 14pt;
+}
+
+@media only screen and (max-width: 880px) {
+    main {
+        margin-left: 50px;
+    }
+    
+    .recruitment-heading-box {
+        margin-bottom: 35px;
+    }
+    
+    .recruit-heading{
+        font-size: 35pt;
+        font-weight: 1;
+        margin-bottom: 0;
+    }
+    
+    .recruitment-heading-box p {
+        font-size: 13;
+        padding: 0;
+    }
+    
+    .band {
+        margin-top: 60px;
+    }
+    
+    .band h2 {
+        font-weight: bold;
+        font-size: 20pt;
+    }
+    
+    .band h4 {
+        font-weight: 5;
+        font-size: 11pt;
+        margin-top: 1; 
+        padding-bottom: 1,
+    }
+    
+    .band p {
+        font-size: 8pt;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        margin: 0 15px;
+    }
+    
+    .recruitment-heading-box {
+        margin-bottom: 6px;
+    }
+    
+    .recruit-heading{
+        font-size: 30pt;
+        font-weight: 1;
+        margin-bottom: 0;
+    }
+    
+    .recruitment-heading-box p {
+        font-size: 14;
+        padding: 0;
+    }
+    
+    .band {
+        margin-top: 60px;
+    }
+    
+    .band h2 {
+        font-weight: bold;
+        font-size: 18pt;
+    }
+    
+    .band h4 {
+        font-weight: 5;
+        font-size: 9pt;
+        margin-top: 1; 
+        padding-bottom: 1,
+    }
+    
+    .band p {
+        font-size: 8pt;
+    }
+} */

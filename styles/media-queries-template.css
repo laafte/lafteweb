@@ -1,0 +1,41 @@
+/* General styles */
+/* 
+Things like background color, font-family etc.
+Common styles regardless of screen size.
+*/
+
+
+/* Smartphones, portrait */
+
+/* No media query, design for small phones first, then change CSS once screen gets bigger */
+
+
+/* Smartphones, landscape */
+
+@media only screen and (min-width: 500px){
+
+}
+
+/* Tablets, portrait */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Tablets, landscape */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Laptops and desktops */
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1600px) {
+
+}
