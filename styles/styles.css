@@ -69,8 +69,19 @@ nav a.selected{
     display: none;
 }
 
-main{
+.content-container{
     flex: 1 0 auto;
+    margin: 10px 30px;
+}
+
+.heading h1{
+    font-size: 30pt;
+    margin: 0;
+}
+
+.heading p{
+    font-size: 9pt;
+    margin: 0;
 }
 
 footer{
@@ -179,6 +190,10 @@ footer .leader-info{
         transform: scale(0.9)
     }
 
+    .content-container{
+        margin: 10px 50px 50px;
+    }
+
     footer p{
         font-size: 8pt;
     }
@@ -213,6 +228,19 @@ footer .leader-info{
         font-size: 9pt;
     }
 
+    .content-container{
+        margin: 20px 100px 50px;
+    }
+
+    .heading h1{
+        font-size: 35pt;
+    }
+    
+    .heading p{
+        font-size: 13pt;
+        margin: 0;
+    }
+
 }
 
 /* Tablets, landscape */
@@ -229,14 +257,25 @@ footer .leader-info{
     nav.nav-mobile{
         display: none;
     }
-
 }
-
-
 
 /* Laptops and desktops */
 
 @media only screen and (min-width: 1200px) {
+
+    .content-container{
+        margin: 50px 130px;
+    }
+
+    .heading h1{
+        font-size: 40pt;
+    }
+    
+    .heading p{
+        font-size: 16pt;
+    }
+
+    
 
 }
 

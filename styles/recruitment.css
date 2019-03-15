@@ -8,24 +8,6 @@ Common styles regardless of screen size.
 
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
 
-main {
-    margin: 10px 30px 50px;
-}
-
-.recruitment-heading-box {
-    margin-bottom: 6px;
-}
-
-.recruit-heading{
-    font-size: 30pt;
-    margin-bottom: 0;
-}
-
-.recruitment-heading-box p {
-    font-size: 11pt;
-    padding: 0;
-}
-
 .band {
     margin-top: 60px;
 }
@@ -50,31 +32,12 @@ main {
 
 @media only screen and (min-width: 500px){
 
-    main {
-        margin: 10px 50px 50px;
-    }
 
 }
 
 /* Tablets, portrait */
 
 @media only screen and (min-width: 768px) {
-
-    main {
-        margin: 20px 100px 50px;
-    }
-    
-    .recruitment-heading-box {
-        margin-bottom: 35px;
-    }
-    
-    .recruit-heading{
-        font-size: 35pt;
-    }
-    
-    .recruitment-heading-box p {
-        font-size: 13pt;
-    }
     
     .band {
         margin-top: 60px;
@@ -100,21 +63,6 @@ main {
 /* Laptops and desktops */
 
 @media only screen and (min-width: 1200px) {
-    main {
-        margin: 50px 130px;
-    }
-    
-    .recruitment-heading-box {
-        margin-bottom: 50px;
-    }
-    
-    .recruit-heading{
-        font-size: 55pt;
-    }
-    
-    .recruitment-heading-box p {
-        font-size: 20pt;
-    }
     
     .band {
         margin-top: 60px;
