@@ -1,0 +1,83 @@
+
+/* Smartphones, portrait */
+
+/* No media query, design for small phones first, then change CSS once screen gets bigger */
+
+.pictures-navigation-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.picture-container{
+    flex: 1 0 45%;
+    position: relative;
+    background-color: black;
+}
+
+.picture-container img{
+    max-width: 100%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.picture-container .picture-text{
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Smartphones, landscape */
+
+@media only screen and (min-width: 500px){
+    .picture-container .picture-text{
+        font-size: 16pt;
+    }
+}
+
+/* Tablets, portrait */
+
+@media only screen and (min-width: 768px) {
+
+    .picture-container .picture-text{
+        font-size: 18pt;
+    }
+
+}
+
+/* Tablets, landscape */
+
+@media only screen and (min-width: 992px) {
+
+    .picture-container .picture-text{
+        font-size: 22pt;
+    }
+
+}
+
+/* Laptops and desktops */
+
+@media only screen and (min-width: 1200px) {
+    .picture-container{
+        flex: 1 0 30%;
+        cursor: pointer;
+    }
+
+    .picture-container img:hover{
+        opacity: 1;
+    }
+
+    .picture-container .picture-text{
+        font-size: 30pt;
+    }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1600px) {
+
+}
