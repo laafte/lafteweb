@@ -198,9 +198,6 @@ footer .leader-info{
         font-size: 8pt;
     }
 
-    footer .leader-info{
-        display: none;
-    }
 }
 
 /* Tablets, portrait */
@@ -268,7 +265,7 @@ footer .leader-info{
     }
 
     .heading h1{
-        font-size: 40pt;
+        font-size: 55pt;
     }
     
     .heading p{

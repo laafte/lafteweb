@@ -9,7 +9,7 @@ Common styles regardless of screen size.
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
 
 .band {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .band h2 {
@@ -39,10 +39,6 @@ Common styles regardless of screen size.
 
 @media only screen and (min-width: 768px) {
     
-    .band {
-        margin-top: 60px;
-    }
-    
     .band h2 {
         font-size: 20pt;
     }
@@ -65,7 +61,7 @@ Common styles regardless of screen size.
 @media only screen and (min-width: 1200px) {
     
     .band {
-        margin-top: 60px;
+        margin-top: 40px;
     }
     
     .band h2 {
@@ -88,128 +84,3 @@ Common styles regardless of screen size.
 @media only screen and (min-width: 1600px) {
     
 }
-
-
-
-/* Styling for the recruitment page
-
-main {
-    margin: 50px 130px;
-}
-
-.recruitment-heading-box {
-    margin-bottom: 50px;
-}
-
-.recruit-heading{
-    font-size: 55pt;
-    font-weight: 1;
-    margin-bottom: 0;
-}
-
-.recruitment-heading-box p {
-    font-size: 20;
-    padding: 0;
-}
-
-.band {
-    margin-top: 60px;
-}
-
-.band h2 {
-    font-weight: bolder;
-    font-size: 30pt;
-}
-
-.band h4 {
-    font-weight: 5;
-    font-size: 16pt;
-    margin-top: 1; 
-    padding-bottom: 1,
-}
-
-.band p {
-    font-size: 14pt;
-}
-
-@media only screen and (max-width: 880px) {
-    main {
-        margin-left: 50px;
-    }
-    
-    .recruitment-heading-box {
-        margin-bottom: 35px;
-    }
-    
-    .recruit-heading{
-        font-size: 35pt;
-        font-weight: 1;
-        margin-bottom: 0;
-    }
-    
-    .recruitment-heading-box p {
-        font-size: 13;
-        padding: 0;
-    }
-    
-    .band {
-        margin-top: 60px;
-    }
-    
-    .band h2 {
-        font-weight: bold;
-        font-size: 20pt;
-    }
-    
-    .band h4 {
-        font-weight: 5;
-        font-size: 11pt;
-        margin-top: 1; 
-        padding-bottom: 1,
-    }
-    
-    .band p {
-        font-size: 8pt;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    main {
-        margin: 0 15px;
-    }
-    
-    .recruitment-heading-box {
-        margin-bottom: 6px;
-    }
-    
-    .recruit-heading{
-        font-size: 30pt;
-        font-weight: 1;
-        margin-bottom: 0;
-    }
-    
-    .recruitment-heading-box p {
-        font-size: 14;
-        padding: 0;
-    }
-    
-    .band {
-        margin-top: 60px;
-    }
-    
-    .band h2 {
-        font-weight: bold;
-        font-size: 18pt;
-    }
-    
-    .band h4 {
-        font-weight: 5;
-        font-size: 9pt;
-        margin-top: 1; 
-        padding-bottom: 1,
-    }
-    
-    .band p {
-        font-size: 8pt;
-    }
-} */
