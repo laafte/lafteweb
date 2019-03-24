@@ -28,8 +28,8 @@
             <nav class="nav-web">
                 <a href="" class="selected">Hjem</a>
                 <a href="views/recruitment.html">Opptak</a>
-                <a href="#">Kontakt</a>
-                <a href="#">Om</a>
+                <a href="views/contact.html">Kontakt</a>
+                <a href="views/about.html">Om</a>
                 <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
             </nav>
             <div class="hamburger hamburger--slider toggle-navbar">
@@ -43,8 +43,8 @@
     <nav class="nav-mobile">
         <a href="" class="selected">Hjem</a>
         <a href="views/recruitment.html">Opptak</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Om</a>
+        <a href="views/contact.html">Kontakt</a>
+        <a href="views/about.html">Om</a>
         <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
     </nav>
     <main>
@@ -123,12 +123,12 @@
                 }, 1000);
             })
 
-            $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 5);
+            $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 15);
 
             $(window).on('resize orientationchange', function(){
                 console.log("fire")
                 $(".landing-container").height("100%");
-                $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 5);
+                $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 15);
             }); 
         })
 
