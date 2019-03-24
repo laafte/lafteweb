@@ -1,7 +1,68 @@
-
 /* Smartphones, portrait */
 
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
+
+.landing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    min-height: 300px;
+}
+
+.landing{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing h1{
+    font-size: 40pt;
+}
+
+.landing p{
+    font-size: 11pt;
+    margin: 0 10px;
+}
+
+.landing img{
+    display: flex;
+    width: 130px;
+    height: 130px;
+}
+
+.bouncing-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+.bouncing-arrow img {
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
 
 .pictures-navigation-container{
     display: flex;
@@ -30,10 +91,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
+    width: 90%;
+    font-weight: bold;
+}
+
+.two-column-container .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .two-column-container .image-container img{
     max-width: 100%;
+    max-height: 300px;
     border-radius: 10px;
 }
 
@@ -46,8 +117,12 @@
 
 @media only screen and (min-width: 500px){
 
-    .picture-container{
-        flex: 1 0 30%;
+    .heading{
+        text-align: center;
+    }
+
+    .landing p{
+        width: 500px;
     }
 
     .picture-container .picture-text{
@@ -59,6 +134,20 @@
 
 @media only screen and (min-width: 768px) {
 
+    .landing h1{
+        font-size: 60pt;
+    }
+
+    .landing p{
+        font-size: 13pt;
+        width: 600px;
+    }
+
+    .landing img{
+        width: 220px;
+        height: 220px;
+    }
+
     .picture-container .picture-text{
         font-size: 18pt;
     }
@@ -69,6 +158,19 @@
 
 @media only screen and (min-width: 992px) {
 
+    .landing-container{
+        min-height: 500px;
+    }
+
+    .landing p{
+        font-size: 14pt;
+        width: 700px;
+    }
+
+    .picture-container{
+        flex: 1 0 30%;
+    }
+
     .picture-container .picture-text{
         font-size: 22pt;
     }  
@@ -77,6 +179,44 @@
 /* Laptops and desktops */
 
 @media only screen and (min-width: 1200px) {
+    
+
+    .heading{
+        text-align: left;
+    }
+
+    .landing{
+        text-align: center;
+    }
+
+    .landing h1{
+        font-size: 70pt;
+    }
+
+    .landing p{
+        font-size: 14pt;
+        width: 700px;
+    }
+
+    .landing img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .bouncing-arrow {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin: 10px auto 50px;
+        animation: bounce 2s infinite;
+        cursor: pointer;
+    }
+
+    .bouncing-arrow img {
+        width: 60px;
+        height: 60px;
+    }
+  
     .picture-container{
         cursor: pointer;
     }
@@ -101,6 +241,10 @@
 
     .two-column-container .image-container{
         padding: 20px 20px 20px 0;
+    }
+
+    .two-column-container .image-container img {
+        max-height: 1000px;
     }
 
     .two-column-container .text-container{

@@ -21,6 +21,7 @@ header{
     align-items: center;
     background-color: #F8F8F8;
     box-shadow: 0 1px 6px #cccccc;
+    z-index: 2;
 }
 
 .header-heading{
@@ -243,6 +244,7 @@ footer .leader-info{
 /* Tablets, landscape */
 
 @media only screen and (min-width: 1050px) {
+    
     .toggle-navbar{
         display: none;
     }
@@ -271,8 +273,6 @@ footer .leader-info{
     .heading p{
         font-size: 16pt;
     }
-
-    
 
 }
 
