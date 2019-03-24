@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Låfteweb | Hjem</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/lafte.ico"/>
@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header-heading">
             <div class="header-heading-logo-container">
-                <img src="assets/img/låfte_lysbakgrunn.png" alt="Logo til Låfteweb" width="70" height="70">
+                <img src="assets/img/låfte_lysbakgrunn.png" alt="Logo til Låfteweb">
             </div>
             <div class="header-text">
                 <h1>Studentersamfundets Orkester</h1>
@@ -39,6 +39,7 @@
             </div>
         </div>
     </header>
+    <!-- <div class="header-pusher"></div> -->
     <nav class="nav-mobile">
         <a href="" class="selected">Hjem</a>
         <a href="views/recruitment.html">Opptak</a>
@@ -47,13 +48,17 @@
         <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
     </nav>
     <main>
-        <div class="content-container">
-            <div class="heading">
+        <div class="content-container landing-container">
+            <div class="heading landing">
                 <h1>Hvem er vi?</h1>
-                <p>Studentersamfundets Orkester består av ca. 200 medlemmer fordelt på forskjellige band og orkestre ved Studentersamfundet i Trondhjem.</p>
+                <p>Studentersamfundets Orkester består av ca. 200 medlemmer fordelt på forskjellige band og orkestre ved Studentersamfundet i Trondhjem</p>
+                <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo">
             </div>
         </div>
-        <div class="pictures-navigation-container">
+        <div class="bouncing-arrow">
+            <img src="assets/img/arrow.svg" alt="Bouncing arrow">
+        </div>
+        <div id="picture-links" class="pictures-navigation-container">
             <a class="picture-container" href="http://kjellerbandet.no">
                 <img src="assets/img/kjellerbandet.jpg" alt="kjellerbandet">
                 <p class="picture-text">Kjellerbandet</p>
@@ -104,18 +109,30 @@
         <p>www.samfundet.no</p>
 
     </footer>
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $(".toggle-navbar").click(function(){
                 $(".nav-mobile").toggleClass("activate-hamburger");
                 $(".hamburger").toggleClass("is-active");
             })
+
+            $(".bouncing-arrow").click(function(){
+                $('html, body').animate({
+                    scrollTop: $("#picture-links").offset().top
+                }, 1000);
+            })
+
+            $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 5);
+
+            $(window).on('resize orientationchange', function(){
+                console.log("fire")
+                $(".landing-container").height("100%");
+                $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 5);
+            }); 
         })
+
+        
     </script>
 </body>
 </html>
