@@ -282,7 +282,15 @@ footer .leader-info{
 
 }
 
+.jump-link {
+    font-size: 2em;
+    position: absolute;
+    left: -10000px;
+}
 
-
+.jump-link:focus {
+    position: static;
+    left: 0;
+}
 
 
