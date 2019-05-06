@@ -78,7 +78,7 @@
 
 .picture-container img{
     max-width: 100%;
-    opacity: 0.5;
+    opacity: 0.45;
     transition: all 0.3s ease-in-out;
 }
 
