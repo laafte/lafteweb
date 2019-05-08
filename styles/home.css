@@ -82,6 +82,14 @@
     transition: all 0.3s ease-in-out;
 }
 
+.picture-container:focus {
+    background-color: steelblue;
+}
+
+.picture-container:focus img {
+    display: none;
+}
+
 .picture-container .picture-text{
     color: white;
     text-align: center;
