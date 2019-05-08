@@ -112,29 +112,37 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            // Hide mobile menu if we have js, show button
-            $(".nav-mobile").removeClass("activate-hamburger");
-            $(".toggle-navbar").show();
+            let navMobile = $(".nav-mobile")
+            let toggleNavbar = $(".toggle-navbar")
+            let hamburger = $(".hamburger")
+            let bouncingArrow = $(".bouncing-arrow")
+            let pictureLinks = $("#picture-links")
+            let landingContainer = $(".landing-container")
+            let header = $(".header")
 
-            $(".toggle-navbar").click(function(){
-                $(".nav-mobile").toggleClass("activate-hamburger");
-                $(".hamburger").toggleClass("is-active");
+            // Hide mobile menu if we have js, show button
+            navMobile.removeClass("activate-hamburger");
+            toggleNavbar.show();
+
+            toggleNavbar.click(function(){
+                navMobile.toggleClass("activate-hamburger");
+                hamburger.toggleClass("is-active");
             })
 
-            $(".bouncing-arrow").click(function(){
+            bouncingArrow.click(function(){
                 $('html, body').animate({
-                    scrollTop: $("#picture-links").offset().top
+                    scrollTop: pictureLinks.offset().top
                 }, 1000);
             })
 
             // Set height of landing container to fit screen
-            $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 15);
+            landingContainer.height(landingContainer.height() - header.height() - bouncingArrow.height() - 15);
 
             // Set height of landing container on screen dimension change
             $(window).on('resize orientationchange', function(){
                 console.log("fire")
-                $(".landing-container").height("100%");
-                $(".landing-container").height($(".landing-container").height() - $(".header").height() - $(".bouncing-arrow").height() - 15);
+                landingContainer.height("100%");
+                landingContainer.height(landingContainer.height() - header.height() - bouncingArrow.height() - 15);
             });
         })
 
