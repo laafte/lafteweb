@@ -125,6 +125,10 @@ header{
 }
 
 .toggle-navbar{
+    display: block;
+}
+
+.toggle-navbar.hidden {
     display: none;
 }
 

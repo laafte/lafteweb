@@ -32,7 +32,7 @@
                 <a href="views/about.html">Om</a>
                 <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
             </nav>
-            <div class="hamburger hamburger--slider toggle-navbar">
+            <div class="hamburger hamburger--slider toggle-navbar hidden">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
@@ -122,7 +122,7 @@
 
             // Hide mobile menu if we have js, show button
             navMobile.removeClass("activate-hamburger");
-            toggleNavbar.show();
+            toggleNavbar.removeClass("hidden");
 
             toggleNavbar.click(function(){
                 navMobile.toggleClass("activate-hamburger");
