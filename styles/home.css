@@ -36,6 +36,8 @@
 }
 
 .bouncing-arrow {
+    position: sticky;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +49,8 @@
 }
 
 .bouncing-arrow img {
+    position: sticky;
+    bottom: 0;
     width: 60px;
     height: 60px;
 }
