@@ -125,7 +125,7 @@ header{
 }
 
 .toggle-navbar{
-    display: block;
+    display: none;
 }
 
 .hamburger-box{

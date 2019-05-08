@@ -40,7 +40,7 @@
         </div>
     </header>
     <!-- <div class="header-pusher"></div> -->
-    <nav class="nav-mobile">
+    <nav class="nav-mobile activate-hamburger">
         <a href="" class="selected">Hjem</a>
         <a href="views/recruitment.html">Opptak</a>
         <a href="views/contact.html">Kontakt</a>
@@ -112,6 +112,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
+            // Hide mobile menu if we have js, show button
+            $(".nav-mobile").removeClass("activate-hamburger");
+            $(".toggle-navbar").show();
+
             $(".toggle-navbar").click(function(){
                 $(".nav-mobile").toggleClass("activate-hamburger");
                 $(".hamburger").toggleClass("is-active");
