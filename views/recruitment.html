@@ -32,14 +32,14 @@
                 <a href="#">Om</a>
                 <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
             </nav>
-            <div class="hamburger hamburger--slider toggle-navbar">
+            <div class="hamburger hamburger--slider toggle-navbar hidden">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
             </div>
         </div>
     </header>
-    <nav class="nav-mobile">
+    <nav class="nav-mobile activate-hamburger">
             <a href="../index.html">Hjem</a>
             <a href="#" class="selected">Opptak</a>
             <a href="contact.html">Kontakt</a>
@@ -112,9 +112,17 @@
     </script>
     <script>
         $(document).ready(function(){
-            $(".toggle-navbar").click(function(){
-                $(".nav-mobile").toggleClass("activate-hamburger");
-                $(".hamburger").toggleClass("is-active");
+            let navMobile = $(".nav-mobile")
+            let toggleNavbar = $(".toggle-navbar")
+            let hamburger = $(".hamburger")
+
+            // Hide mobile menu if we have js, show button
+            navMobile.removeClass("activate-hamburger");
+            toggleNavbar.removeClass("hidden");
+
+            toggleNavbar.click(function(){
+                navMobile.toggleClass("activate-hamburger");
+                hamburger.toggleClass("is-active");
             })
         })
     </script>
