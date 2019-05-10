@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", event => {
         // API does in fact support multiple leaders, pick the first one and keep minding our own business
         let sjef = data.contacts.filter(contact => contact.role === "orkestersjef")[0];
         leaderInfos.forEach(element => {
-            element.textContent = `Orkestersjef: ${sjef.name} | laafte-sjef@samfundet.no | ${sjef.phone}`;
+            element.textContent = `${sjef.roleName}: ${sjef.name} | laafte-sjef@samfundet.no | ${sjef.phone}`;
         })
     })
 })
