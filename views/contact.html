@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../styles/hamburger.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/contact.css">
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/contact.js"></script>
 </head>
 <body>
     <header>
@@ -20,8 +22,7 @@
                 </div>
                 <div class="header-text">
                     <h1>Studentersamfundets Orkester</h1>
-                    <!-- TODO: Get the name and phonenumber (and email) dynamically from somewhere else -->
-                    <p>Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+                    <p class="leader-info">Orkestersjef:</p>
                 </div>
             </div>
             <div class="navigation">
@@ -54,45 +55,19 @@
         </div>
         <div>
             <h3> Hovedstyret </h3>
-            <div class="mail-board-container">
-                <!-- epostliste -->
-                <div class="mail-board">
-                    <i class='fas fa-gavel'> </i>
-                    <h6>Leder</h6>
-                    <p>Øystein Krogstie</p>
-                    <a href = "mailto: laafte-sjef@samfundet.no">laafte-sjef@samfundet.no</a>
-                </div>
-                <div class="mail-board">
-                    <i class='fas fa-pen-fancy'> </i>
-                    <h6>Nestleder</h6>
-                    <p>Heidi Sollie</p>
-                    <a href = "mailto: laafte-nestleder@samfundet.no">laafte-nestleder@samfundet.no</a>
-                </div>
-                <div class="mail-board"> 
-                    <i class='fas fa-coins'> </i>
-                    <h6>Kasserer</h6>
-                    <p>Ola Lajord</p>
-                    <a href = "mailto: laafte-kasserer@samfundet.no">laafte-kasserer@samfundet.no</a>
-                </div>
-                <div class="mail-board">
-                    <i class='fas fa-tools'> </i>
-                    <h6>Materialforvalter</h6>
-                    <p>Anita Haglund</p>
-                    <a href = "mailto: laafte-material@samfundet.no">laafte-material@samfundet.no</a>
-                </div>
-                <div class="mail-board">
-                    <i class='fas fa-cocktail'> </i>
-                    <h6>Intendant</h6>
-                    <p>Hanna Haugerud</p>
-                    <a href = "mailto: laafte-bar@samfundet.no">laafte-bar@samfundet.no</a>
-                </div>
+            <div class="mail-board-container" id="hovedstyre-container">
+                <noscript>
+                    <p>
+                        Det ser ut til at du ikke har støtte for JavaScript. Dette trengs for å laste inn kontaktinfo
+                    </p>
+                </noscript>
             </div>
 
         </div>
 
     </main>
     <footer>
-        <p class="leader-info">Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+        <p class="leader-info">Orkestersjef:</p>
         <p> &copy; låfteweb 2019</p>
         <p>www.samfundet.no</p>
     </footer>
