@@ -2,22 +2,13 @@
 
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
 
-.landing-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 100%;
-    min-height: 300px;
-}
-
 .landing{
-    text-align: center;
-    margin: auto;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .landing h1{
@@ -25,14 +16,15 @@
 }
 
 .landing p{
-    font-size: 11pt;
-    margin: 0 10px;
+    font-size: 8pt;
+    margin: 0 30px 30px;
+    text-align: center;
 }
 
 .landing img{
     display: flex;
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 180px;
 }
 
 .bouncing-arrow {
@@ -66,7 +58,6 @@
         transform: translateY(-15px);
     }
 }
-
 
 .pictures-navigation-container{
     display: flex;
@@ -116,6 +107,31 @@
     text-align: center;
     font-size: 6pt;
 }
+
+@media only screen and (min-width: 325px){
+    
+    .landing h1{
+        font-size: 52pt;
+    }
+    
+    .landing p{
+        font-size: 8pt;
+        margin: 0 50px 30px;
+    }
+    
+    .landing img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .bouncing-arrow {
+        width: 60px;
+        height: 60px;
+    }
+
+
+}
+
 
 /* Smartphones, landscape */
 

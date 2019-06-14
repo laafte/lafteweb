@@ -32,7 +32,7 @@
                 <a href="views/about.html">Om</a>
                 <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
             </nav>
-            <div class="hamburger hamburger--slider toggle-navbar hidden">
+            <div tabindex="1" class="hamburger hamburger--slider toggle-navbar hidden">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
@@ -48,12 +48,10 @@
         <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
     </nav>
     <main>
-        <div class="content-container landing-container">
-            <div class="heading landing">
-                <h1>Hvem er vi?</h1>
-                <p>Studentersamfundets Orkester består av ca. 200 medlemmer fordelt på forskjellige band og orkestre ved Studentersamfundet i Trondhjem</p>
-                <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo">
-            </div>
+        <div class="landing">
+            <h1>Hvem er vi?</h1>
+            <p>Studentersamfundets Orkester består av ca. 200 medlemmer fordelt på forskjellige band og orkestre ved Studentersamfundet i Trondhjem</p>
+            <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo">
         </div>
         <div class="bouncing-arrow">
             <a href="#picture-links"><img src="assets/img/arrow.svg" alt="Gå til resten av innholdet"></a>
@@ -128,6 +126,14 @@
                 navMobile.toggleClass("activate-hamburger");
                 hamburger.toggleClass("is-active");
             })
+
+            toggleNavbar.keydown((e) => {
+                if(e.keyCode == 13){
+                    navMobile.toggleClass("activate-hamburger");
+                    hamburger.toggleClass("is-active");
+                }
+            })
+            
 
             bouncingArrow.click(function(){
                 $('html, body').animate({
