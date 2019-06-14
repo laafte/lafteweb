@@ -75,6 +75,10 @@ nav a.selected{
     margin: 10px 30px;
 }
 
+.content-container h3{
+    font-size: 30pt;
+}
+
 .heading h1{
     font-size: 30pt;
     margin: 0;
