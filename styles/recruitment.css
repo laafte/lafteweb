@@ -13,7 +13,7 @@ Common styles regardless of screen size.
 }
 
 .band h2 {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 18pt;
 }
 

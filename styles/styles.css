@@ -31,6 +31,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .header-text h1{
@@ -75,6 +76,7 @@ nav a.selected{
 .content-container{
     flex: 1 0 auto;
     margin: 10px 30px;
+    padding-top: 35pt;
 }
 
 .content-container h3{
@@ -210,6 +212,7 @@ footer .leader-info{
 
     .content-container{
         margin: 10px 50px 50px;
+        margin-top: 45px;
     }
 
     footer p{
@@ -249,6 +252,7 @@ footer .leader-info{
 
     .content-container{
         margin: 20px 100px 50px;
+        padding-top: 75px;
     }
 
     .landing h1{
@@ -277,6 +281,10 @@ footer .leader-info{
     nav.nav-mobile{
         display: none;
     }
+
+    .content-container{
+        padding-top: 95px;
+    }
 }
 
 /* Laptops and desktops */
@@ -285,6 +293,7 @@ footer .leader-info{
 
     .content-container{
         margin: 50px 130px;
+        padding-top: 45px;
     }
 
     .heading h1{
