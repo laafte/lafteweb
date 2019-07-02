@@ -77,7 +77,7 @@ nav a.selected{
     margin: 10px 30px;
 }
 
-.heading h1{
+.heading h3{
     font-size: 30pt;
     margin: 0;
 }
@@ -208,6 +208,10 @@ footer .leader-info{
         margin: 10px 50px 50px;
     }
 
+    .heading h3 {
+        font-size: 42pt;
+    }
+
     footer p{
         font-size: 8pt;
     }
@@ -256,6 +260,10 @@ footer .leader-info{
         margin: 0;
     }
 
+    .heading h3 {
+        font-size: 50pt;
+    }
+
 }
 
 /* Tablets, landscape */
@@ -283,7 +291,7 @@ footer .leader-info{
         margin: 50px 130px;
     }
 
-    .heading h1{
+    .heading h3{
         font-size: 55pt;
     }
     
