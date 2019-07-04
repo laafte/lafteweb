@@ -40,11 +40,11 @@ Common styles regardless of screen size.
 @media only screen and (min-width: 768px) {
     
     .band h2 {
-        font-size: 20pt;
+        font-size: 30pt;
     }
     
     .band h4 {
-        font-size: 11pt;
+        font-size: 20pt;
     }
     
 }
@@ -53,7 +53,7 @@ Common styles regardless of screen size.
 /* Tablets, landscape */
 
 @media only screen and (min-width: 992px) {
-
+    
 }
 
 /* Laptops and desktops */

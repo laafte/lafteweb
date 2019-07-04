@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Låfteweb | Opptak</title>
-    <script type="module" src="../js/main.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/lafte.ico"/>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,6 +11,8 @@
     <link rel="stylesheet" href="../styles/hamburger.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/recruitment.css">
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/recruitment.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
                 <a href="../index.html">Hjem</a>
                 <a href="#" class="selected">Opptak</a>
                 <a href="contact.html">Kontakt</a>
-                <a href="#">Om</a>
+                <a href="about.html">Om</a>
                 <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
             </nav>
             <div class="hamburger hamburger--slider toggle-navbar hidden">
@@ -51,53 +52,12 @@
             <h3>Opptak</h3>
             <p>Her finner du informasjon om hvilke undergrupperinger som har opptak og hvilke instrumenter som søkes.</p>
         </div>
-        <div class="band"> <!-- Kjellerbandet -->
-            <h2>Kjellerbandet</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- LSL -->
-            <h2>Leisure Suite Lovers</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- SMoller -->
-            <h2>S. Møller Storband</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- Snau -->
-            <h2>Snaustrinda Spelemannslag</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- Salongen -->
-            <h2>Studentersamfundets Salongorkester</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- Symforch -->
-            <h2>Studentersamfundets Symfoniorkester</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        <div id="band-reqruitment-container">
+            <noscript>
+                <p>
+                    Det ser ut til at du ikke har støtte for JavaScript. Dette trengs for å laste inn opptaksinformasjon.
+                </p>
+            </noscript>
         </div>
     </main>
     <footer>
