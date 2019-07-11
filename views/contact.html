@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../styles/hamburger.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/contact.css">
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/contact.js"></script>
 </head>
 <body>
     <a href="#main-content" class="jump-link">Hopp til hovedinnhold</a>
@@ -21,8 +23,7 @@
                 </div>
                 <div class="header-text">
                     <h1>Studentersamfundets Orkester</h1>
-                    <!-- TODO: Get the name and phonenumber (and email) dynamically from somewhere else -->
-                    <p>Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+                    <p class="leader-info">Orkestersjef:</p>
                 </div>
             </div>
             <div class="navigation">
@@ -30,72 +31,60 @@
                     <a href="../index.html">Hjem</a>
                     <a href="recruitment.html">Opptak</a>
                     <a href="#" class="selected">Kontakt</a>
-                    <a href="#">Om</a>
+                    <a href="about.html">Om</a>
                     <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
                 </nav>
-                <div class="hamburger hamburger--slider toggle-navbar">
+                <div class="hamburger hamburger--slider toggle-navbar hidden">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>
             </div>
     </header>
-    <nav class="nav-mobile">
+    <nav class="nav-mobile activate-hamburger">
             <a href="../index.html">Hjem</a>
             <a href="recruitment.html">Opptak</a>
             <a href="#" class="selected">Kontakt</a>
-            <a href="#">Om</a>
+            <a href="about.html">Om</a>
             <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
     </nav>    
     <main class="content-container" id="main-content">
-        <div class="contact-heading">
+        <div class="heading">
             <!-- Infotekst?  -->
-            <h1>Kontakt</h1>
-            <p> Kontaktinfo til styret av Studentersamfundets Orkester </p>
+            <div class="heading">
+                <h3>Kontakt</h3>
+                <p> Kontaktinfo til styret av Studentersamfundets Orkester </p>
+            </div>
         </div>
         <div>
-            <h3> Hovedstyret </h3>
-            <div class="mail-board-container">
-                <!-- epostliste -->
-                <div class="mail-board">
-                    <span class='fas fa-gavel'> </span>
-                    <h6>Leder</h6>
-                    <p>Øystein Krogstie</p>
-                    <a href = "mailto: laafte-sjef@samfundet.no">laafte-sjef@samfundet.no</a>
-                </div>
-                <div class="mail-board">
-                    <span class='fas fa-pen-fancy'> </span>
-                    <h6>Nestleder</h6>
-                    <p>Heidi Sollie</p>
-                    <a href = "mailto: laafte-nestleder@samfundet.no">laafte-nestleder@samfundet.no</a>
-                </div>
-                <div class="mail-board"> 
-                    <span class='fas fa-coins'> </span>
-                    <h6>Kasserer</h6>
-                    <p>Ola Lajord</p>
-                    <a href = "mailto: laafte-kasserer@samfundet.no">laafte-kasserer@samfundet.no</a>
-                </div>
-                <div class="mail-board">
-                    <span class='fas fa-tools'> </span>
-                    <h6>Materialforvalter</h6>
-                    <p>Anita Haglund</p>
-                    <a href = "mailto: laafte-material@samfundet.no">laafte-material@samfundet.no</a>
-                </div>
-                <div class="mail-board">
-                    <i class='fas fa-cocktail'> </i>
-                    <h6>Intendant</h6>
-                    <p>Hanna Haugerud</p>
-                    <a href = "mailto: laafte-bar@samfundet.no">laafte-bar@samfundet.no</a>
-                </div>
+            <div class="heading">
+                <h3> Hovedstyret </h3>
             </div>
+            <div class="mail-board-container" id="hovedstyre-container">
+                <noscript>
+                    <p>
+                        Det ser ut til at du ikke har støtte for JavaScript. Dette trengs for å laste inn kontaktinfo
+                    </p>
+                </noscript>
+            </div>
+        </div>
+        <div>
+            <h3> Storstyret </h3>
 
         </div>
-
     </main>
     <footer>
-        <p class="leader-info">Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
-        <p> &copy; låfteweb 2019</p>
-        <p>www.samfundet.no</p>
+        <div class="left-img-container">
+            <img class="left-img" src="/assets/img/logo_ntnu_u-slagord.png" alt="NTNU">
+        </div>
+        <div class="center-module">
+            <p class="leader-info">Orkestersjef: </p>
+            <p> &copy; låfteweb 2019</p>
+            <p>www.samfundet.no</p>
+        </div>
+        <div class="right-img-container">
+            <img class="right-img" src="/assets/img/vtlogo.png" alt="Velferdstinget">
+        </div>
     </footer>
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -104,9 +93,17 @@
     </script>
     <script>
         $(document).ready(function(){
-            $(".toggle-navbar").click(function(){
-                $(".nav-mobile").toggleClass("activate-hamburger");
-                $(".hamburger").toggleClass("is-active");
+            let navMobile = $(".nav-mobile")
+            let toggleNavbar = $(".toggle-navbar")
+            let hamburger = $(".hamburger")
+
+            // Hide mobile menu if we have js, show button
+            navMobile.removeClass("activate-hamburger");
+            toggleNavbar.removeClass("hidden");
+
+            toggleNavbar.click(function(){
+                navMobile.toggleClass("activate-hamburger");
+                hamburger.toggleClass("is-active");
             })
         })
     </script>

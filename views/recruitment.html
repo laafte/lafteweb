@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../styles/hamburger.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/recruitment.css">
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/recruitment.js"></script>
 </head>
 <body>
     <a href="#main-content" class="jump-link">Hopp til hovedinnhold</a>
@@ -21,8 +23,7 @@
             </div>
             <div class="header-text">
                 <h1>Studentersamfundets Orkester</h1>
-                <!-- TODO: Get the name and phonenumber (and email) dynamically from somewhere else -->
-                <p>Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
+                <p class="leader-info">Orkestersjef:</p>
             </div>
         </div>
         <div class="navigation">
@@ -30,82 +31,49 @@
                 <a href="../index.html">Hjem</a>
                 <a href="#" class="selected">Opptak</a>
                 <a href="contact.html">Kontakt</a>
-                <a href="#">Om</a>
+                <a href="about.html">Om</a>
                 <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
             </nav>
-            <div class="hamburger hamburger--slider toggle-navbar">
+            <div class="hamburger hamburger--slider toggle-navbar hidden">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
             </div>
         </div>
     </header>
-    <nav class="nav-mobile">
+    <nav class="nav-mobile activate-hamburger">
             <a href="../index.html">Hjem</a>
             <a href="#" class="selected">Opptak</a>
             <a href="contact.html">Kontakt</a>
-            <a href="#">Om</a>
+            <a href="about.html">Om</a>
             <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
     </nav>
     <main class="content-container" id="main-content">
         <div class="heading">
-            <h1>Opptak</h1>
+            <h3>Opptak</h3>
             <p>Her finner du informasjon om hvilke undergrupperinger som har opptak og hvilke instrumenter som søkes.</p>
         </div>
-        <div class="band"> <!-- Kjellerbandet -->
-            <h2>Kjellerbandet</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- LSL -->
-            <h2>Leisure Suite Lovers</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- SMoller -->
-            <h2>S. Møller Storband</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- Snau -->
-            <h2>Snaustrinda Spelemannslag</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- Salongen -->
-            <h2>Studentersamfundets Salongorkester</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
-        </div>
-        <div class="band"> <!-- Symforch -->
-            <h2>Studentersamfundets Symfoniorkester</h2>
-            <h4>Faste plasser</h4>
-            <!-- TODO Get the available seats -->
-            <h4>Vikarplasser</h4>
-            <!-- TODO Get the available temp seats -->
-            <p>Send en mail til mail@mail.mail for å melde interesse</p>
+        <div id="band-reqruitment-container">
+            <noscript>
+                <p>
+                    Det ser ut til at du ikke har støtte for JavaScript. Dette trengs for å laste inn opptaksinformasjon.
+                </p>
+            </noscript>
         </div>
     </main>
     <footer>
-        <p class="leader-info">Gjengsjef: Øystein Krogstie | laafte-sjef@samfundet.no | 12345678</p>
-        <p> &copy; låfteweb 2019</p>
-        <p>www.samfundet.no</p>
-    </footer>
+            <div class="left-img-container">
+                <img class="left-img" src="/assets/img/logo_ntnu_u-slagord.png" alt="NTNU">
+            </div>
+            <div class="center-module">
+                <p class="leader-info">Orkestersjef: </p>
+                <p> &copy; låfteweb 2019</p>
+                <p>www.samfundet.no</p>
+            </div>
+            <div class="right-img-container">
+                <img class="right-img" src="/assets/img/vtlogo.png" alt="Velferdstinget">
+            </div>
+        </footer>
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -113,9 +81,17 @@
     </script>
     <script>
         $(document).ready(function(){
-            $(".toggle-navbar").click(function(){
-                $(".nav-mobile").toggleClass("activate-hamburger");
-                $(".hamburger").toggleClass("is-active");
+            let navMobile = $(".nav-mobile")
+            let toggleNavbar = $(".toggle-navbar")
+            let hamburger = $(".hamburger")
+
+            // Hide mobile menu if we have js, show button
+            navMobile.removeClass("activate-hamburger");
+            toggleNavbar.removeClass("hidden");
+
+            toggleNavbar.click(function(){
+                navMobile.toggleClass("activate-hamburger");
+                hamburger.toggleClass("is-active");
             })
         })
     </script>

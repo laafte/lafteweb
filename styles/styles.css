@@ -15,6 +15,8 @@ body{
 }
 
 header{
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,6 +31,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .header-text h1{
@@ -73,9 +76,14 @@ nav a.selected{
 .content-container{
     flex: 1 0 auto;
     margin: 10px 30px;
+    padding-top: 35pt;
 }
 
-.heading h1{
+.content-container h3{
+    font-size: 30pt;
+}
+
+.heading h3{
     font-size: 30pt;
     margin: 0;
 }
@@ -88,12 +96,37 @@ nav a.selected{
 footer{
     color: whitesmoke;
     background-color: #343434;
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
 }
 
-footer p{
+footer .left-img-container {
+    padding-top: 10px;
+}
+
+footer .left-img {
+    height: 10px;
+    width: 53px;
+}
+
+footer .right-img-container {
+    padding-top: 10px;
+    padding-left: 44px;
+    /* padding-right: 22px; */
+}
+
+footer .right-img {
+    height: 15px;
+    width: 15px;
+}
+
+footer .center-module p{
     text-align: center;
     margin: 0;
+    font-size: 4pt;
 }
 
 .activate-hamburger{
@@ -128,6 +161,10 @@ header{
     display: block;
 }
 
+.toggle-navbar.hidden {
+    display: none;
+}
+
 .hamburger-box{
     transform: scale(0.7)
 }
@@ -137,6 +174,9 @@ nav.nav-web{
 }
 
 nav.nav-mobile{
+    position: absolute;
+    top: 50px;  /* Must equal size of header */
+    width: 100%;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -191,8 +231,17 @@ footer .leader-info{
         transform: scale(0.9)
     }
 
+    nav.nav-mobile{
+        top: 66.4px;  /* Must equal size of header */
+    }
+
     .content-container{
         margin: 10px 50px 50px;
+        margin-top: 45px;
+    }
+
+    .heading h3 {
+        font-size: 42pt;
     }
 
     footer p{
@@ -226,24 +275,48 @@ footer .leader-info{
         font-size: 9pt;
     }
 
-    .content-container{
-        margin: 20px 100px 50px;
+    nav.nav-mobile{
+        top: 75.6px;  /* Must equal size of header */
     }
 
-    .heading h1{
+    .content-container{
+        margin: 20px 100px 50px;
+        padding-top: 75px;
+    }
+
+    .landing h1{
         font-size: 35pt;
     }
     
-    .heading p{
+    .landing p{
         font-size: 13pt;
         margin: 0;
+    }
+
+    .heading h3 {
+        font-size: 50pt;
+
+    }
+    
+    footer .center-module p {
+        font-size: 8pt;
+    }
+
+    footer .left-img {
+        width: 106px;
+        height: 20px;
+    }
+
+    footer .right-img {
+        width: 30px;
+        height: 30;
     }
 
 }
 
 /* Tablets, landscape */
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1100px) {
     
     .toggle-navbar{
         display: none;
@@ -256,6 +329,10 @@ footer .leader-info{
     nav.nav-mobile{
         display: none;
     }
+
+    .content-container{
+        padding-top: 95px;
+    }
 }
 
 /* Laptops and desktops */
@@ -264,9 +341,10 @@ footer .leader-info{
 
     .content-container{
         margin: 50px 130px;
+        padding-top: 45px;
     }
 
-    .heading h1{
+    .heading h3{
         font-size: 55pt;
     }
     

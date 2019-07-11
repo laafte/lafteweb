@@ -2,22 +2,13 @@
 
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
 
-.landing-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 100%;
-    min-height: 300px;
-}
-
 .landing{
-    text-align: center;
-    margin: auto;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .landing h1{
@@ -25,17 +16,20 @@
 }
 
 .landing p{
-    font-size: 11pt;
-    margin: 0 10px;
+    font-size: 8pt;
+    margin: 0 30px 10px;
+    text-align: center;
 }
 
 .landing img{
     display: flex;
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 180px;
 }
 
 .bouncing-arrow {
+    position: sticky;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +41,8 @@
 }
 
 .bouncing-arrow img {
+    position: sticky;
+    bottom: 0;
     width: 60px;
     height: 60px;
 }
@@ -63,23 +59,28 @@
     }
 }
 
-
 .pictures-navigation-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .picture-container{
+    display: flex;
     flex: 1 0 45%;
     position: relative;
     background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 10px 0;
 }
 
 .picture-container img{
-    max-width: 100%;
     opacity: 0.45;
     transition: all 0.3s ease-in-out;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .picture-container:focus {
@@ -101,6 +102,7 @@
     transition: all 0.3s ease-in-out;
     width: 90%;
     font-weight: bold;
+    font-size: 20pt;
 }
 
 .two-column-container .image-container{
@@ -119,6 +121,28 @@
 .two-column-container .image-container p{
     text-align: center;
     font-size: 6pt;
+}
+
+@media only screen and (min-width: 325px){
+
+    .landing h1{
+        font-size: 44pt;
+    }
+
+    .landing p{
+        font-size: 8pt;
+        margin: 0 50px 10px;
+    }
+
+    .landing img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .bouncing-arrow {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 /* Smartphones, landscape */
@@ -140,7 +164,7 @@
 
 /* Tablets, portrait */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 
     .landing h1{
         font-size: 60pt;
@@ -156,8 +180,16 @@
         height: 220px;
     }
 
+    .pictures-navigation-container{
+        flex-direction: row;
+    }
+
+    .picture-container{
+        margin: 20px;
+    }
+
     .picture-container .picture-text{
-        font-size: 18pt;
+        font-size: 28pt;
     }
 
 }
@@ -238,7 +270,7 @@
     }
 
     .picture-container .picture-text{
-        font-size: 30pt;
+        font-size: 22pt;
     }
 
     .two-column-container{

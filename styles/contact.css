@@ -15,6 +15,7 @@ Common styles regardless of screen size.
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
 }
 
 .mail-board {
