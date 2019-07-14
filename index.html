@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="nb-NO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
@@ -14,10 +14,11 @@
     <script type="module" src="./js/main.js"></script>
 </head>
 <body>
+    <a href="#main-content" class="jump-link">Hopp til hovedinnhold</a>
     <header class="header">
         <div class="header-heading">
             <div class="header-heading-logo-container">
-                <img src="assets/img/låfte_lysbakgrunn.png" alt="Logo til Låfteweb">
+                <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo">
             </div>
             <div class="header-text">
                 <h1>Studentersamfundets Orkester</h1>
@@ -30,7 +31,7 @@
                 <a href="views/recruitment.html">Opptak</a>
                 <a href="views/contact.html">Kontakt</a>
                 <a href="views/about.html">Om</a>
-                <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
+                <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
             </nav>
             <div tabindex="1" class="hamburger hamburger--slider toggle-navbar hidden">
                 <div class="hamburger-box">
@@ -45,9 +46,10 @@
         <a href="views/recruitment.html">Opptak</a>
         <a href="views/contact.html">Kontakt</a>
         <a href="views/about.html">Om</a>
-        <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <i class='fas fa-external-link-alt'></i></span></a>
+        <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
     </nav>
-    <main>
+
+    <main id="main-content">
         <div class="landing">
             <h1>Hvem er vi?</h1>
             <p>Studentersamfundets Orkester består av ca. 200 medlemmer fordelt på forskjellige band og orkestre ved Studentersamfundet i Trondhjem</p>
@@ -62,27 +64,27 @@
             </div>
             <div class="pictures-navigation-container">
                 <a class="picture-container" href="http://kjellerbandet.no">
-                    <img src="assets/img/kjellerbandet.jpg" alt="kjellerbandet">
+                    <img src="assets/img/kjellerbandet.jpg" alt="">
                     <p class="picture-text">Kjellerbandet</p>
                 </a>
                 <a class="picture-container" href="http://www.leisuresuitlovers.com/">
-                    <img src="assets/img/lsl.jpg" alt="Leisure Suit Lovers">
+                    <img src="assets/img/lsl.jpg" alt="">
                     <p class="picture-text">Leisure Suit Lovers</p>
                 </a>
                 <a class="picture-container" href="http://smoller.no">
-                    <img src="assets/img/smoller.jpg" alt="S. Møller Storband">
+                    <img src="assets/img/smoller.jpg" alt="">
                     <p class="picture-text">S. Møller Storband</p>
                 </a>
                 <a class="picture-container" href="http://snaustrinda.samfundet.no">
-                    <img src="assets/img/snaustrinda.jpg" alt="Snaustrinda Spelemannslag">
+                    <img src="assets/img/snaustrinda.jpg" alt="">
                     <p class="picture-text">Snaustrinda Spelemannslag</p>
                 </a>
                 <a class="picture-container" href="http://salong.samfundet.no">
-                    <img src="assets/img/salongen.jpg" alt="Studentersamfundets Salongorkester">
+                    <img src="assets/img/salongen.jpg" alt="">
                     <p class="picture-text">Studentersamfundets Salongorkester</p>
                 </a>
                 <a class="picture-container" href="http://symforch.no">
-                    <img src="assets/img/symforch.jpg" alt="Studentersamfundets Symfoniorkester">
+                    <img src="assets/img/symforch.jpg" alt="">
                     <p class="picture-text">Studentersamfundets Symfoniorkester</p>
                 </a>
             </div>
@@ -93,7 +95,7 @@
             </div>
             <div class="two-column-container">
                 <div class="image-container">
-                    <img src="assets/img/lsl.jpg" alt="Leisure Suit Lovers">
+                    <img src="assets/img/lsl.jpg" alt="Foto av Leisure Suit Lovers på scenen">
                     <p class="image-text">LSL-konsert for en full Storsal | 2019 | <a href="https://foto.samfundet.no/">foto.samfundet.no</a></p>
                 </div>
                 <div class="text-container">
@@ -108,7 +110,7 @@
     </main>
     <footer>
             <div class="left-img-container">
-                <img class="left-img" src="/assets/img/logo_ntnu_u-slagord.png" alt="NTNU">
+                <img class="left-img" src="/assets/img/logo_ntnu_u-slagord.png" alt="NTNU-logo">
             </div>
             <div class="center-module">
                 <p class="leader-info">Orkestersjef: </p>
@@ -116,7 +118,7 @@
                 <p>www.samfundet.no</p>
             </div>
             <div class="right-img-container">
-                <img class="right-img" src="/assets/img/vtlogo.png" alt="Velferdstinget">
+                <img class="right-img" src="/assets/img/vtlogo.png" alt="Velferdstingets logo">
             </div>
         </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -145,7 +147,7 @@
                     hamburger.toggleClass("is-active");
                 }
             })
-            
+
 
             bouncingArrow.click(function(){
                 $('html, body').animate({

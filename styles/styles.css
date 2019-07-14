@@ -14,8 +14,11 @@ body{
     flex-direction: column;
 }
 
+html, body {
+    font-size: 1em;
+}
+
 header{
-    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -126,7 +129,7 @@ footer .right-img {
 footer .center-module p{
     text-align: center;
     margin: 0;
-    font-size: 4pt;
+    font-size: 1em;
 }
 
 .activate-hamburger{
@@ -195,7 +198,7 @@ footer{
 }
 
 footer p{
-    font-size: 6pt;
+    font-size: 1em;
 }
 
 footer .leader-info{
@@ -215,7 +218,7 @@ footer .leader-info{
 
     .header-text p{
         display: block;
-        font-size: 8pt;
+        font-size: 1em;
     }
 
     .header-heading-logo-container{
@@ -245,7 +248,7 @@ footer .leader-info{
     }
 
     footer p{
-        font-size: 8pt;
+        font-size: 1em;
     }
 
 }
@@ -272,7 +275,7 @@ footer .leader-info{
     }
 
     .header-text p{
-        font-size: 9pt;
+        font-size: 1em;
     }
 
     nav.nav-mobile{
@@ -299,7 +302,7 @@ footer .leader-info{
     }
     
     footer .center-module p {
-        font-size: 8pt;
+        font-size: 1em;
     }
 
     footer .left-img {
@@ -360,7 +363,15 @@ footer .leader-info{
 
 }
 
+.jump-link {
+    font-size: 2em;
+    position: absolute;
+    left: -10000px;
+}
 
-
+.jump-link:focus {
+    position: static;
+    left: 0;
+}
 
 

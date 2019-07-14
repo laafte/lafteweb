@@ -77,10 +77,18 @@
 }
 
 .picture-container img{
-    opacity: 0.5;
+    opacity: 0.45;
     transition: all 0.3s ease-in-out;
     max-width: 100%;
     border-radius: 10px;
+}
+
+.picture-container:focus {
+    background-color: steelblue;
+}
+
+.picture-container:focus img {
+    display: none;
 }
 
 .picture-container .picture-text{
@@ -112,25 +120,25 @@
 
 .two-column-container .image-container p{
     text-align: center;
-    font-size: 6pt;
+    font-size: 1em;
 }
 
 @media only screen and (min-width: 325px){
-    
+
     .landing h1{
         font-size: 44pt;
     }
-    
+
     .landing p{
         font-size: 8pt;
         margin: 0 50px 10px;
     }
-    
+
     .landing img{
         width: 200px;
         height: 200px;
     }
-    
+
     .bouncing-arrow {
         width: 60px;
         height: 60px;
