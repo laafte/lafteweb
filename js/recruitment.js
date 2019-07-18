@@ -10,15 +10,15 @@ function onRecruitmentLoaded(data) {
         "smoller-leder" : "S. Møller Storband", 
         "snau-leder" : "Snaustrinda Spelemannslag", 
         "salong-leder" : "Studentersamfundets Salongsorkester", 
-        "symforch-formann" : "Studentersamfundet Symfoniorkester"
+        "symforch-formann" : "Studentersamfundets Symfoniorkester"
     }
     let availableSeatsInBand = {
-        "Kjellerbandet" : "4. trompet, 1. altsax (lead), vokal og gitar.", 
-        "Leisure Suite Lovers" : "Vokal (herre).", 
-        "S. Møller Storband" : "Ingen ledige plasser kommende semester.", 
-        "Snaustrinda Spelemannslag" : "Snau ser særlig etter blås (feks klarinett og fløyte) til høsten, og er ellers interesserte i fele/hardingfele, trekkspel, komp eller andre instrumenter som passer inn i folkemusikken.", 
-        "Studentersamfundets Salongsorkester" : "Ingen ledige plasser kommende semester.", 
-        "Studentersamfundet Symfoniorkester" : "Ingen ledige plasser kommende semester."
+        "Kjellerbandet" : "Kjellerbandet søker denne høsten nye medlemmer på 4. trompet, 1. altsax (lead), vokal og gitar.", 
+        "Leisure Suite Lovers" : "LSL søker denne høsten ny mannlig vokalist.", 
+        "S. Møller Storband" : "Se grupperingens egne nettsider for mer informasjon om opptak.", 
+        "Snaustrinda Spelemannslag" : "Snau ser særlig etter blås (feks klarinett og fløyte) denne høsten, og er ellers interesserte i fele/hardingfele, trekkspel, komp eller andre instrumenter som passer inn i folkemusikken.", 
+        "Studentersamfundets Salongsorkester" : "Se grupperingens egne nettsider for mer informasjon om opptak.", 
+        "Studentersamfundets Symfoniorkester" : "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, horn, trombone, trompet og tuba. Se Symforchs egne nettsider for mer informasjon om åpen øving og opptak."
     }
 
     let leaders = data.contacts.filter(contact => leaderRoles.includes(contact.role));
@@ -33,7 +33,7 @@ function onRecruitmentLoaded(data) {
             `<h2>${band}</h2>
             <h4>Ledige plasser:</h4>
             <p>${availableSeats}</p>
-            <p> Send en mail til <a style = " white-space:nowrap; " href="mailto:${leader.email}?subject=Opptak">${leader.email}</a> for å melde interesse</p>`
+            <p> Send en mail til <a style = " white-space:nowrap; " href="mailto:${leader.email}?subject=Opptak">${leader.email}</a> for å melde interesse.</p>`
         container.appendChild(node);
     }); 
 }

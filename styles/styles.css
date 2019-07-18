@@ -79,11 +79,12 @@ nav a.selected{
 .content-container{
     flex: 1 0 auto;
     margin: 10px 30px;
-    padding-top: 35pt;
+    /* padding-top: 35pt; */
 }
 
 .content-container h3{
     font-size: 30pt;
+    padding-top: 20px;
 }
 
 .heading h3{
@@ -284,7 +285,7 @@ footer .leader-info{
 
     .content-container{
         margin: 20px 100px 50px;
-        padding-top: 75px;
+        /* padding-top: 45px; */
     }
 
     .landing h1{
@@ -334,7 +335,7 @@ footer .leader-info{
     }
 
     .content-container{
-        padding-top: 95px;
+        /* padding-top: 55px; */
     }
 }
 
@@ -344,7 +345,7 @@ footer .leader-info{
 
     .content-container{
         margin: 50px 130px;
-        padding-top: 45px;
+        /* padding-top: 35px; */
     }
 
     .heading h3{

@@ -43,6 +43,9 @@ Common styles regardless of screen size.
     margin-top: 0%;
 }
 
+.contact {
+    padding-top: 30px;
+}
 
 
 /* Smartphones, landscape */
