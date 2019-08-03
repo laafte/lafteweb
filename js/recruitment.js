@@ -18,7 +18,7 @@ function onRecruitmentLoaded(data) {
         "S. Møller Storband" : "S. Møller søker trompetist og altsaxofonist denne høsten.", 
         "Snaustrinda Spelemannslag" : "Snau ser særlig etter blås (feks klarinett og fløyte) denne høsten, og er ellers interesserte i fele/hardingfele, trekkspel, komp eller andre instrumenter som passer inn i folkemusikken.", 
         "Studentersamfundets Salongsorkester" : "Se grupperingens egne nettsider for mer informasjon om opptak.", 
-        "Studentersamfundets Symfoniorkester" : "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, horn, trombone, trompet og tuba. Se Symforchs egne nettsider for mer informasjon om åpen øving og opptak."
+        "Studentersamfundets Symfoniorkester" : "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, horn, trombone, trompet, tuba og slagverk. Se Symforchs egne nettsider for mer informasjon om åpen øving og opptak."
     }
 
     let leaders = data.contacts.filter(contact => leaderRoles.includes(contact.role));
