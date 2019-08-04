@@ -155,6 +155,10 @@ h3 {
   font-size: 16pt;
 }
 
+h4 {
+  font-size: 14pt;
+}
+
 p {
   font-size: 10pt;
   text-align: center;
@@ -238,6 +242,10 @@ footer .contact-info {
     font-size: 24pt;
   }
 
+  h4 {
+    font-size: 20pt;
+  }
+
   p {
     font-size: 12pt;
     text-align: center;
@@ -310,6 +318,10 @@ footer .contact-info {
 
   h3 {
     font-size: 32pt;
+  }
+
+  h4 {
+    font-size: 28pt;
   }
 
   p {
@@ -387,6 +399,10 @@ footer .contact-info {
     font-size: 32pt;
   }
 
+  h4 {
+    font-size: 26pt;
+  }
+
   p {
     font-size: 18pt;
     text-align: center;
@@ -455,6 +471,10 @@ footer .contact-info {
 
   h3 {
     font-size: 32pt;
+  }
+
+  h4 {
+    font-size: 26pt;
   }
 
   p {
