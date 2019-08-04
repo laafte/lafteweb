@@ -1,88 +1,74 @@
-
 /* General styles */
 /* 
 Things like background color, font-family etc.
 Common styles regardless of screen size.
 */
 
+main {
+  padding: 5% 10%;
+}
 
 /* Smartphones, portrait */
 
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
 
 .mail-board-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .mail-board {
-    flex: 1 0 50%;
-    border: 1px solid #cccccc;
-    padding: 30px;
-    margin: 5px;
-    border-radius: 10px;
-    box-shadow: 0 1px 6px #cccccc;
+  flex: 1 0 50%;
+  border: 1px solid #cccccc;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px #cccccc;
+  max-width: 300px;
 }
 
-.mail-board i {
-    font-size: 25pt;
+.mail-board span {
+  font-size: 25pt;
 }
 
 .mail-board h6 {
-    font-weight: bold;
-}
-
-.mail-board p,h6{
-    font-size: 17pt;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16pt;
 }
 
 .mail-board p {
-    margin-top: 0%;
+  font-size: 12pt;
 }
 
-
+.mail-board p {
+  margin-top: 0;
+}
 
 /* Smartphones, landscape */
 
-@media only screen and (min-width: 500px){
-
+@media only screen and (min-width: 500px) {
 }
 
 /* Tablets, portrait */
 
 @media only screen and (min-width: 768px) {
-.mail-board-container {
-    flex-direction: row;
-}
-
-.mail-board {
-    flex: 1 0 40%;
-}
-
 }
 
 /* Tablets, landscape */
 
 @media only screen and (min-width: 992px) {
-
 }
 
 /* Laptops and desktops */
 
 @media only screen and (min-width: 1200px) {
-
-.mail-board {
-    flex: 1 0 30%;
-    max-width: 30%;
-}
-
 }
 
 /* Large screens */
 
 @media only screen and (min-width: 1600px) {
-
 }

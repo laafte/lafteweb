@@ -1,172 +1,202 @@
 <html lang="nb-NO">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Låfteweb | Hjem</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/lafte.ico"/>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/hamburger.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/lafte.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="styles/hamburger.css"> -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <script type="module" src="./js/main.js"></script>
-</head>
-<body>
-    <a href="#main-content" class="jump-link">Hopp til hovedinnhold</a>
-    <header class="header">
-        <div class="header-heading">
-            <div class="header-heading-logo-container">
-                <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo">
-            </div>
-            <div class="header-text">
-                <h1>Studentersamfundets Orkester</h1>
-                <p class="leader-info">Orkestersjef:</p>
-            </div>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="row">
+        <img
+          class="header-icon"
+          src="assets/img/låfte_lysbakgrunn.png"
+          alt="Låftelogo"
+        />
+        <div class="col">
+          <h1 class="header-title">Studentersamfundets Orkester</h1>
+          <p class="leader-info">Orkestersjef:</p>
         </div>
-        <div class="navigation">
-            <nav class="nav-web">
-                <a href="" class="selected">Hjem</a>
-                <a href="views/recruitment.html">Opptak</a>
-                <a href="views/contact.html">Kontakt</a>
-                <a href="views/about.html">Om</a>
-                <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
-            </nav>
-            <div tabindex="1" class="hamburger hamburger--slider toggle-navbar hidden">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </div>
-        </div>
+        <a class="hamburger-menu" onclick="return toggleMobileNav()">
+          <img
+            id="hamburgerIcon"
+            class="header-icon"
+            src="assets/img/menu.svg"
+            alt="Menu icon"
+          />
+        </a>
+        <nav class="nav-web">
+          <a href="" class="selected">Hjem</a>
+          <a href="views/recruitment.html">Opptak</a>
+          <a href="views/contact.html">Kontakt</a>
+          <a href="views/about.html">Om</a>
+          <a href="https://laafte.samfundet.no/ovingsspeilet/"
+            ><span
+              >Øvingspeilet <span class="fas fa-external-link-alt"></span></span
+          ></a>
+        </nav>
+      </div>
     </header>
-    <!-- <div class="header-pusher"></div> -->
-    <nav class="nav-mobile activate-hamburger">
-        <a href="" class="selected">Hjem</a>
-        <a href="views/recruitment.html">Opptak</a>
-        <a href="views/contact.html">Kontakt</a>
-        <a href="views/about.html">Om</a>
-        <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
+    <nav id="mobileNav" class="nav-mobile">
+      <a href="" class="selected">Hjem</a>
+      <a href="views/recruitment.html">Opptak</a>
+      <a href="views/contact.html">Kontakt</a>
+      <a href="views/about.html">Om</a>
+      <a href="https://laafte.samfundet.no/ovingsspeilet/"
+        ><span>Øvingspeilet <span class="fas fa-external-link-alt"></span></span
+      ></a>
     </nav>
-
-    <main id="main-content">
-        <div class="landing">
-            <h1>Hvem er vi?</h1>
-            <p>Studentersamfundets Orkester består av ca. 200 medlemmer fordelt på forskjellige band og orkestre ved Studentersamfundet i Trondhjem</p>
-            <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo">
+    <main id="mainContent">
+      <div class="content-pusher"></div>
+      <section id="firstSection">
+        <h1>Hvem er vi?</h1>
+        <p>
+          Ca. 200 medlemmer fordelt på forskjellige band og orkestre ved
+          Studentersamfundet i Trondhjem.
+        </p>
+        <div class="landing-image">
+          <img src="assets/img/låfte_lysbakgrunn.png" alt="Låftelogo" />
         </div>
-        <div class="bouncing-arrow">
-            <a href="#picture-links"><img src="assets/img/arrow.svg" alt="Gå til resten av innholdet"></a>
+        <a
+          class="bouncing-arrow"
+          href="#picture-links"
+          onclick="return scrollDown()"
+          ><img src="assets/img/arrow.svg" alt="Gå til resten av innholdet"
+        /></a>
+      </section>
+      <section id="pictureSection">
+        <h2>Hjemmesider</h2>
+        <p>
+          Besøk hver enkelt undergrupperings egne hjemmesider ved å klikke på
+          bildene under.
+        </p>
+        <div class="image-grid">
+          <a class="picture-container" href="http://kjellerbandet.no">
+            <img src="assets/img/kjellerbandet.jpg" alt="" />
+            <p class="picture-text">Kjellerbandet</p>
+          </a>
+          <a class="picture-container" href="http://www.leisuresuitlovers.com/">
+            <img src="assets/img/lsl.jpg" alt="" />
+            <p class="picture-text">Leisure Suit Lovers</p>
+          </a>
+          <a class="picture-container" href="http://smoller.no">
+            <img src="assets/img/smoller.jpg" alt="" />
+            <p class="picture-text">S. Møller Storband</p>
+          </a>
+          <a class="picture-container" href="http://snaustrinda.samfundet.no">
+            <img src="assets/img/snaustrinda.jpg" alt="" />
+            <p class="picture-text">Snaustrinda Spelemannslag</p>
+          </a>
+          <a class="picture-container" href="http://salong.samfundet.no">
+            <img src="assets/img/salongen.jpg" alt="" />
+            <p class="picture-text">Studentersamfundets Salongorkester</p>
+          </a>
+          <a class="picture-container" href="http://symforch.no">
+            <img src="assets/img/symforch.jpg" alt="" />
+            <p class="picture-text">Studentersamfundets Symfoniorkester</p>
+          </a>
         </div>
-        <div class="content-container" id="picture-links">
-            <div class="heading">
-                <h3>Hjemmesider</h3>
-            </div>
-            <div class="pictures-navigation-container">
-                <a class="picture-container" href="http://kjellerbandet.no">
-                    <img src="assets/img/kjellerbandet.jpg" alt="">
-                    <p class="picture-text">Kjellerbandet</p>
-                </a>
-                <a class="picture-container" href="http://www.leisuresuitlovers.com/">
-                    <img src="assets/img/lsl.jpg" alt="">
-                    <p class="picture-text">Leisure Suit Lovers</p>
-                </a>
-                <a class="picture-container" href="http://smoller.no">
-                    <img src="assets/img/smoller.jpg" alt="">
-                    <p class="picture-text">S. Møller Storband</p>
-                </a>
-                <a class="picture-container" href="http://snaustrinda.samfundet.no">
-                    <img src="assets/img/snaustrinda.jpg" alt="">
-                    <p class="picture-text">Snaustrinda Spelemannslag</p>
-                </a>
-                <a class="picture-container" href="http://salong.samfundet.no">
-                    <img src="assets/img/salongen.jpg" alt="">
-                    <p class="picture-text">Studentersamfundets Salongorkester</p>
-                </a>
-                <a class="picture-container" href="http://symforch.no">
-                    <img src="assets/img/symforch.jpg" alt="">
-                    <p class="picture-text">Studentersamfundets Symfoniorkester</p>
-                </a>
-            </div>
+      </section>
+      <section>
+        <h2>Vil du spille?</h2>
+        <div class="want-to-play-row">
+          <div class="image-container">
+            <img src="assets/img/lsl.jpg" alt="LSL-konsert i storsalen" />
+            <p class="image-text">
+              LSL-konsert for en full Storsal | 2019 <br />
+              <a href="https://foto.samfundet.no/">foto.samfundet.no</a>
+            </p>
+          </div>
+          <div class="col">
+            <p class="longer-text">
+              Er du student i Trondheim og ønsker å utfolde deg musikalsk bør
+              Musikerlåfte være et interessant sted for likesinnede. De fleste
+              radisjonelle musikksjangrene er representert blant vår
+              undergrupperinger som alle har egne hjemmesider du kan klikke deg
+              til via bildene over.
+            </p>
+            <p class="longer-text">
+              Ønsker du å spille sammen med oss kan vi garantere et høyt
+              musikalsk nivå og et fantastisk sosialt miljø. Du vil oppleve det
+              beste ved studenttilværelsen i Trondheim, med gjengmedlemskap på
+              Studentersamfundet og alle goder det fører med seg, samt
+              muligheten til å fortsette med det du liker aller best nemlig å
+              spille.
+            </p>
+            <p class="longer-text">
+              Se <a href="views/recruitment.html">opptaksiden</a> for å hvilke
+              instrumenter vi er på utkikk etter akkurat nå!
+            </p>
+          </div>
         </div>
-        <div class="content-container">
-            <div class="heading">
-                <h3>Vil du spille?</h3>
-            </div>
-            <div class="two-column-container">
-                <div class="image-container">
-                    <img src="assets/img/lsl.jpg" alt="Foto av Leisure Suit Lovers på scenen">
-                    <p class="image-text">LSL-konsert for en full Storsal | 2019 | <a href="https://foto.samfundet.no/">foto.samfundet.no</a></p>
-                </div>
-                <div class="text-container">
-                    <p>Er du student i Trondheim og ønsker å utfolde deg musikalsk bør Musikerlåfte være et interessant sted for likesinnede. De fleste radisjonelle musikksjangrene er representert blant vår undergrupperinger som alle har egne hjemmesider du kan klikke deg til via bildene over.</p>
-
-                    <p>Ønsker du å spille sammen med oss kan vi garantere et høyt musikalsk nivå og et fantastisk sosialt miljø. Du vil oppleve det beste ved studenttilværelsen i Trondheim, med gjengmedlemskap på Studentersamfundet og alle goder det fører med seg, samt muligheten til å fortsette med det du liker aller best nemlig å spille.</p>
-
-                    <p>Se <a href="views/recruitment.html">opptaksiden</a> for å hvilke instrumenter vi er på utkikk etter akkurat nå!</p>
-                </div>
-            </div>
-        </div>
+      </section>
     </main>
     <footer>
-            <div class="left-img-container">
-                <img class="left-img" src="/assets/img/logo_ntnu_u-slagord.png" alt="NTNU-logo">
-            </div>
-            <div class="center-module">
-                <p class="leader-info">Orkestersjef: </p>
-                <p> &copy; låfteweb 2019</p>
-                <p>www.samfundet.no</p>
-            </div>
-            <div class="right-img-container">
-                <img class="right-img" src="/assets/img/vtlogo.png" alt="Velferdstingets logo">
-            </div>
-        </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <div class="row">
+        <div class="contact-info">
+          <p class="leader-info">Orkestersjef:</p>
+          <p>&copy; låfteweb 2019</p>
+          <p><a href="www.samfundet.no">www.samfundet.no</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="image-container">
+          <img src="/assets/img/logo_ntnu_compact.png" alt="NTNU-logo" />
+        </div>
+        <div class="image-container">
+          <img src="/assets/img/vtlogo.png" alt="Velferdstingets logo" />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script>
-        $(document).ready(function(){
-            let navMobile = $(".nav-mobile")
-            let toggleNavbar = $(".toggle-navbar")
-            let hamburger = $(".hamburger")
-            let bouncingArrow = $(".bouncing-arrow")
-            let pictureLinks = $("#picture-links")
-            let landingContainer = $(".landing-container")
-            let header = $(".header")
+      let header = document.getElementById("header");
+      let firstSection = document.getElementById("firstSection");
+      let pictureSection = document.getElementById("pictureSection");
+      let hamburgerIcon = document.getElementById("hamburgerIcon");
+      let mobileNav = document.getElementById("mobileNav");
 
-            // Hide mobile menu if we have js, show button
-            navMobile.removeClass("activate-hamburger");
-            toggleNavbar.removeClass("hidden");
+      window.onload = placeMobileNav;
+      window.onresize = placeMobileNav;
 
-            toggleNavbar.click(function(){
-                navMobile.toggleClass("activate-hamburger");
-                hamburger.toggleClass("is-active");
-            })
+      function placeMobileNav() {
+        mobileNav.style.top = header.offsetHeight;
+      }
 
-            toggleNavbar.keydown((e) => {
-                if(e.keyCode == 13){
-                    navMobile.toggleClass("activate-hamburger");
-                    hamburger.toggleClass("is-active");
-                }
-            })
+      function scrollDown() {
+        pictureSection.scrollIntoView({ behavior: "smooth" });
+      }
 
-
-            bouncingArrow.click(function(){
-                $('html, body').animate({
-                    scrollTop: pictureLinks.offset().top
-                }, 1000);
-            })
-
-            // Set height of landing container to fit screen
-            landingContainer.height(landingContainer.height() - header.height() - bouncingArrow.height() - 15);
-
-            // Set height of landing container on screen dimension change
-            $(window).on('resize orientationchange', function(){
-                console.log("fire")
-                landingContainer.height("100%");
-                landingContainer.height(landingContainer.height() - header.height() - bouncingArrow.height() - 15);
-            });
-        })
-
-        
+      function toggleMobileNav() {
+        if (hamburgerIcon.src.indexOf("close") != -1) {
+          hamburgerIcon.src = "assets/img/menu.svg";
+          mobileNav.style.display = "none";
+        } else {
+          hamburgerIcon.src = "assets/img/close.svg";
+          mobileNav.style.display = "flex";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
