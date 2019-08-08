@@ -1,0 +1,130 @@
+<html lang="nb-NO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Låfteweb | Om</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/lafte.ico"
+    />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <a tabindex="0" href="#mainContent" class="jump-link"
+      >Hopp til hovedinnhold</a
+    >
+    <header id="header">
+      <div class="row">
+        <img
+          class="header-icon"
+          src="../../assets/img/låfte_lysbakgrunn.png"
+          alt="Låftelogo"
+        />
+        <div class="col">
+          <h1 class="header-title">Studentersamfundets Orkester</h1>
+          <p class="leader-info">Orkestersjef:</p>
+        </div>
+        <a class="hamburger-menu" onclick="return toggleMobileNav()">
+          <img
+            id="hamburgerIcon"
+            class="header-icon"
+            src="../../assets/img/menu.svg"
+            alt="Menu icon"
+          />
+        </a>
+        <nav class="nav-web">
+          <a tabindex="0" href="../../index.html">Hjem</a>
+          <a tabindex="0" href="recruitment.html">Opptak</a>
+          <a tabindex="0" href="contact.html">Kontakt</a>
+          <a tabindex="0" href="" class="selected">Om</a>
+          <a
+            tabindex="0"
+            target="_blank"
+            href="https://laafte.samfundet.no/ovingsspeilet/"
+            ><span
+              >Øvingspeilet <span class="fas fa-external-link-alt"></span></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <nav id="mobileNav" class="nav-mobile">
+      <a tabindex="0" href="../../index.html">Hjem</a>
+      <a tabindex="0" href="recruitment.html">Opptak</a>
+      <a tabindex="0" href="contact.html">Kontakt</a>
+      <a tabindex="0" href="" class="selected">Om</a>
+      <a
+        tabindex="0"
+        target="_blank"
+        href="https://laafte.samfundet.no/ovingsspeilet/"
+        ><span>Øvingspeilet <span class="fas fa-external-link-alt"></span></span
+      ></a>
+    </nav>
+    <main id="mainContent">
+      <div class="maintenance">
+        <p>
+          Historien om
+          <span style="font-weight: 800">Studentersamfundets Orkester</span> er
+          lang og begivenhetsrik. <br /><br />
+          I dette øyeblikk jobbes det med å skrive den ned.
+          <br /><br />
+          Kom tilbake senere for spennende lesning!
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="contact-info">
+          <p class="leader-info">Orkestersjef:</p>
+          <p>&copy; låfteweb 2019</p>
+          <p><a href="www.samfundet.no">www.samfundet.no</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="image-container">
+          <img src="/assets/img/logo_ntnu_compact.png" alt="NTNU-logo" />
+        </div>
+        <div class="image-container">
+          <img src="/assets/img/vtlogo.png" alt="Velferdstingets logo" />
+        </div>
+      </div>
+    </footer>
+    <script>
+      let header = document.getElementById("header");
+      let hamburgerIcon = document.getElementById("hamburgerIcon");
+      let mobileNav = document.getElementById("mobileNav");
+      let mainContent = document.getElementById("mainContent");
+
+      window.onload = function() {
+        placeMobileNav();
+      };
+      window.onresize = placeMobileNav;
+
+      function placeMobileNav() {
+        mobileNav.style.top = header.offsetHeight;
+      }
+
+      function placeMainContent() {}
+
+      function toggleMobileNav() {
+        if (hamburgerIcon.src.indexOf("close") != -1) {
+          hamburgerIcon.src = "../../assets/img/menu.svg";
+          mobileNav.style.display = "none";
+        } else {
+          hamburgerIcon.src = "../../assets/img/close.svg";
+          mobileNav.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>

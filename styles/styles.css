@@ -3,286 +3,562 @@ This file contains the common styles for every page.
 Header styles, footer styles, fonts etc.
 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Chivo|Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Patua+One&display=swap");
 
 /* General styles */
+/* 
+Things like background color, font-family etc.
+Common styles regardless of screen size.
+*/
 
-body{
-    background-color: #f8f8f8;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F8F8F8;
-    box-shadow: 0 1px 6px #cccccc;
-    z-index: 2;
+.maintenance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
-.header-heading{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 0 #d2d2d2;
+  position: absolute;
+  width: 100%;
 }
 
-.header-text h1{
-    margin: 0;
-    font-weight: 400;
+.header-title {
+  flex: 1;
+  font-family: "Lato", sans-serif;
 }
 
-.header-text p{
-    margin: 0;
-    color: #555555;
+.content-pusher {
+  height: 10vh; /* Some height that is larger than the header */
 }
 
-.navigation{
-    display: flex;
-    flex-direction: row;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.navigation nav a:hover{
-    opacity: 0.7;
-    cursor: pointer;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5% 10%;
 }
 
-.navigation nav a{
-    margin: 0 15px;
-    padding: 0 3px 5px;
-    text-decoration: none; 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
-nav a.selected{
-    border-bottom: 3px solid steelblue;
+header .row {
+  margin: 0;
+  padding: 5px 15px;
 }
 
-.toggle-navbar {
-    width: 100%;
-    padding: 0 5px;
-    box-sizing: border-box;
-    text-align: right;
-    font-size: 20px;
-    display: none;
+.nav-mobile {
+  background-color: #dfdfdf;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
 }
 
-.content-container{
-    flex: 1 0 auto;
-    margin: 10px 30px;
+.nav-mobile a {
+  margin: 10px;
+  color: black;
 }
 
-.heading h1{
-    font-size: 30pt;
-    margin: 0;
+.landing-image,
+.bouncing-arrow {
+  display: flex;
+  justify-content: center;
 }
 
-.heading p{
-    font-size: 9pt;
-    margin: 0;
+.image-grid {
+  display: flex;
+  flex-direction: column;
 }
 
-footer{
-    color: whitesmoke;
-    background-color: #343434;
-    flex-shrink: 0;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-footer p{
-    text-align: center;
-    margin: 0;
+.image-text {
+  font-style: italic;
+  width: 100%;
 }
 
-.activate-hamburger{
-    display: flex !important;
+.longer-text {
+  text-align: left;
+  margin-block-end: 0;
+  width: 100%;
 }
 
+footer {
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+
+footer a {
+  color: white;
+}
 
 /* Smartphones, portrait */
 
-header{
-    padding: 10px 2px;
+/* No media query, design for small phones first, then change CSS once screen gets bigger */
+
+h1,
+h2,
+h3 {
+  font-family: "Patua One", cursive;
+  font-weight: normal;
+  text-align: left;
 }
 
-.header-text h1{
-    font-size: 12pt;
+h1 {
+  font-size: 30pt;
 }
 
-.header-text p{
-    display: none;
+h2 {
+  font-size: 24pt;
 }
 
-.header-heading-logo-container{
-    margin-right: 10px;
+h3 {
+  font-size: 16pt;
 }
 
-.header-heading-logo-container img{
-    width: 30px;
-    height: 30px;
+h4 {
+  font-size: 14pt;
 }
 
-.toggle-navbar{
-    display: block;
+p {
+  font-size: 10pt;
+  text-align: center;
+  max-width: 60rem;
 }
 
-.hamburger-box{
-    transform: scale(0.7)
+img {
+  width: 250px;
 }
 
-nav.nav-web{
-    display: none;
+.header-icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 10px 0;
 }
 
-nav.nav-mobile{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #eeeeee;
-    padding: 10px 0;
+header .col {
+  flex: 1;
 }
 
-nav.nav-mobile a{
-    margin: 5px;
-    text-decoration: none;
+.header-title {
+  font-size: 11pt;
+  font-weight: normal;
+  margin-top: 10px;
 }
 
-footer{
-    padding: 8px;
+header .leader-info {
+  display: none;
 }
 
-footer p{
-    font-size: 6pt;
+.leader-info {
+  font-size: 9pt;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-footer .leader-info{
-    margin-bottom: 10px;
+.nav-web {
+  display: none;
+}
+
+.image-text {
+  font-size: 8pt;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer p {
+  font-size: 10pt;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer .image-container {
+  margin: 0 15px;
+}
+
+footer .contact-info {
+  margin: 20px;
+  padding: 0 30px;
 }
 
 /* Smartphones, landscape */
 
-@media only screen and (min-width: 500px){
-    header{
-        padding: 10px 5px;
-    }
-    
-    .header-text h1{
-        font-size: 16pt;
-    }
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 50pt;
+    margin: 0;
+  }
 
-    .header-text p{
-        display: block;
-        font-size: 8pt;
-    }
+  h2 {
+    font-size: 32pt;
+  }
 
-    .header-heading-logo-container{
-        margin-right: 10px;
-    }
+  h3 {
+    font-size: 24pt;
+  }
 
-    .header-heading-logo-container img{
-        width: 45px;
-        height: 45px;
-    }
+  h4 {
+    font-size: 20pt;
+  }
 
-    .hamburger-box{
-        transform: scale(0.9)
-    }
+  p {
+    font-size: 12pt;
+    text-align: center;
+  }
 
-    .content-container{
-        margin: 10px 50px 50px;
-    }
+  img {
+    width: 250px;
+  }
 
-    footer p{
-        font-size: 8pt;
-    }
+  .header-icon {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+  }
 
+  .header-title {
+    font-size: 18pt;
+  }
+
+  header .leader-info {
+    display: flex;
+  }
+
+  .leader-info {
+    font-size: 8pt;
+  }
+
+  .nav-web {
+    display: none;
+  }
+
+  .image-text {
+    font-size: 10pt;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer p {
+    font-size: 8pt;
+  }
+
+  footer img {
+    width: 50px;
+  }
+
+  footer .image-container {
+    margin: 0 15px;
+  }
+
+  footer .contact-info {
+    padding: 0 30px;
+  }
 }
 
 /* Tablets, portrait */
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 80pt;
+    margin: 0;
+  }
 
-    header{ 
-        padding: 5px 30px;
-    }
+  h2 {
+    font-size: 50pt;
+  }
 
-    .header-heading-logo-container{
-        margin-right: 30px;
-    }
+  h3 {
+    font-size: 32pt;
+  }
 
-    .header-heading-logo-container img{
-        width: 60px;
-        height: 60px;
-    }
+  h4 {
+    font-size: 28pt;
+  }
 
-    .header-text h1{
-        font-size: 24pt;
-    }
+  p {
+    font-size: 18pt;
+    text-align: center;
+  }
 
-    .header-text p{
-        font-size: 9pt;
-    }
+  img {
+    width: 400px;
+  }
 
-    .content-container{
-        margin: 20px 100px 50px;
-    }
+  .header-icon {
+    width: 60px;
+    height: 60px;
+    margin: 15px 15px 15px 0;
+  }
 
-    .heading h1{
-        font-size: 35pt;
-    }
-    
-    .heading p{
-        font-size: 13pt;
-        margin: 0;
-    }
+  .header-title {
+    font-size: 30pt;
+  }
 
+  .leader-info {
+    font-size: 13pt;
+  }
+
+  .nav-mobile a {
+    font-size: 20pt;
+  }
+
+  .image-text {
+    font-size: 11pt;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer p {
+    font-size: 14pt;
+  }
+
+  footer img {
+    width: 70px;
+    margin: 10px;
+  }
+
+  footer .image-container {
+    margin: 0 15px;
+  }
+
+  footer .contact-info {
+    padding: 0 30px;
+  }
+
+  footer .leader-info {
+    font-size: 16pt;
+  }
 }
 
 /* Tablets, landscape */
 
-@media only screen and (min-width: 1050px) {
-    
-    .toggle-navbar{
-        display: none;
-    }
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 80pt;
+    margin: 0;
+  }
 
-    nav.nav-web{
-        display: block;
-    }
-    
-    nav.nav-mobile{
-        display: none;
-    }
+  h2 {
+    font-size: 50pt;
+  }
+
+  h3 {
+    font-size: 32pt;
+  }
+
+  h4 {
+    font-size: 26pt;
+  }
+
+  p {
+    font-size: 18pt;
+    text-align: center;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  .header-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-title {
+    font-size: 30pt;
+  }
+
+  .leader-info {
+    font-size: 13pt;
+  }
+
+  .nav-mobile a {
+    font-size: 20pt;
+  }
+
+  .image-text {
+    font-size: 12pt;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer p {
+    font-size: 12pt;
+  }
+
+  footer img {
+    width: 70px;
+    margin: 10px;
+  }
+
+  footer .image-container {
+    margin: 0 15px;
+  }
+
+  footer .contact-info {
+    padding: 0 30px;
+  }
 }
 
 /* Laptops and desktops */
 
 @media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 60pt;
+    margin: 0;
+  }
 
-    .content-container{
-        margin: 50px 130px;
-    }
+  h2 {
+    font-size: 50pt;
+  }
 
-    .heading h1{
-        font-size: 55pt;
-    }
-    
-    .heading p{
-        font-size: 16pt;
-    }
+  h3 {
+    font-size: 32pt;
+  }
 
+  h4 {
+    font-size: 26pt;
+  }
+
+  p {
+    font-size: 14pt;
+  }
+
+  img {
+    width: 500px;
+  }
+
+  .header-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-title {
+    font-size: 24pt;
+  }
+
+  .leader-info {
+    font-size: 10pt;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-web {
+    display: flex;
+  }
+
+  .nav-web a {
+    margin: auto 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-web a.selected {
+    border-bottom: steelblue solid 3px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer p {
+    font-size: 12pt;
+  }
 }
 
 /* Large screens */
 
 @media only screen and (min-width: 1600px) {
-
 }
 
+/* Animations */
 
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 
+/* UU */
 
+.jump-link {
+  font-size: 2em;
+  position: absolute;
+  left: -10000px;
+}
 
+.jump-link:focus {
+  position: static;
+  left: 0;
+}
