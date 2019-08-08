@@ -53,12 +53,16 @@ section:nth-child(odd) {
   opacity: 0.25;
 }
 
-.picture-container img:hover {
+.picture-container:hover img {
   opacity: 0.45;
 }
 
+.picture-container:focus {
+  background-color: steelblue;
+}
+
 .picture-container:focus img {
-  opacity: 0.45;
+  opacity: 0;
 }
 
 .picture-container p {
