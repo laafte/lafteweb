@@ -39,9 +39,9 @@ function onRecruitmentLoaded(data) {
     "Snaustrinda Spelemannslag":
       "Snau ser særlig etter blås (feks klarinett og fløyte) denne høsten, og er ellers interesserte i fele/hardingfele, trekkspel, komp eller andre instrumenter som passer inn i folkemusikken.",
     "Studentersamfundets Salongsorkester":
-      "Se grupperingens egne nettsider for mer informasjon om opptak.",
+    "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester":
-      "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, horn, trombone, trompet, tuba og slagverk. Se Symforchs egne nettsider for mer informasjon om åpen øving og opptak."
+    "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, horn, trombone, trompet, tuba og slagverk. Se <a href=\"https://www.symforch.no/\">Symforchs egne nettsider</a> for mer informasjon om åpen øving og opptak."
   };
 
   let leaders = data.contacts.filter(contact =>
@@ -63,7 +63,7 @@ function onRecruitmentLoaded(data) {
         ${
           availableSeats == null
             ? "<p class='longer-text'><span style='font-style: italic'>Ingen informasjon tilgjenelig</span></p>"
-            : `<p class='longer-text'>${availableSeats}</p><p class='longer-text'><p class="longer-text"> Send en mail til <a style = " white-space:nowrap; " href="mailto:${
+            : `<p class='longer-text'>${availableSeats}</p><p class='longer-text'><p class="longer-text"> Send epost til <a style = " white-space:nowrap; " href="mailto:${
                 leader.email == null
                   ? leaderInBand[leader.role][1]
                   : leader.email
