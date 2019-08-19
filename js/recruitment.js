@@ -41,7 +41,7 @@ function onRecruitmentLoaded(data) {
     "Studentersamfundets Salongsorkester":
     "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester":
-    "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, horn, trombone, trompet, tuba og slagverk. Se <a href=\"https://www.symforch.no/\">Symforchs egne nettsider</a> for mer informasjon om åpen øving og opptak."
+    "Symfoniorkesteret søker nye medlemmer på fiolin, bratsj, fagott, horn, trombone, trompet, tuba og slagverk. Se <a href=\"https://www.symforch.no/\">Symforchs egne nettsider</a> for mer informasjon om åpen øving og opptak."
   };
 
   let leaders = data.contacts.filter(contact =>
