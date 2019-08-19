@@ -40,7 +40,6 @@ section:nth-child(odd) {
 }
 
 .picture-container {
-  display: flex;
   position: relative;
   margin: 10px;
   border-radius: 10px;
