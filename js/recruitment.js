@@ -34,8 +34,8 @@ function onRecruitmentLoaded(data) {
     "Kjellerbandet": null,
     "Leisure Suite Lovers": null,
     "S. Møller Storband":
-      "S. Møller har opptak for vikar på bass og fast plass på trombone.",
-    "Snaustrinda Spelemannslag": null,
+      "S. Møller har opptak for vikar på bass og fast plass på trombone våren 2020.",
+    "Snaustrinda Spelemannslag": "Snaustrinda har opptak, og ser etter fele, hardingfele, klarinett, fløyte, perk eller andre instrumenter som passer inn i folkemusikken. Vi har åpne øvelser torsdag 9. og torsdag 16. januar kl. 18.50.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": null
