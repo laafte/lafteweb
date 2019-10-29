@@ -59,7 +59,7 @@ function onRecruitmentLoaded(data) {
         <h4>Ledige plasser:</h4>
         ${
       availableSeats == null
-        ? "<p class='longer-text'><span style='font-style: italic'>Ingen informasjon tilgjenelig</span></p>"
+        ? "<p class='longer-text'><span style='font-style: italic'>Informasjon kommer!</span></p>"
         : `<p class='longer-text'>${availableSeats}</p><p class='longer-text'><p class="longer-text"> Send epost til <a style = " white-space:nowrap; " href="mailto:${
         leader.email == null
           ? leaderInBand[leader.role][1]
