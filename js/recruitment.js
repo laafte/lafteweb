@@ -13,7 +13,7 @@ function onRecruitmentLoaded(data) {
   ];
 
   let leaderInBand = {
-    "kb-leder": ["Kjellerbandet", "kb-styret@gmail.com"],
+    "kb-leder": ["Kjellerbandet", "kb-sjef@samfundet.no"],
     "lsl-leder": ["Leisure Suite Lovers", "lsl@samfundet.no"],
     "smoller-leder": ["S. Møller Storband", "post@smoller.no"],
     "snau-leder": [
@@ -31,14 +31,14 @@ function onRecruitmentLoaded(data) {
   };
 
   let availableSeatsInBand = {
-    "Kjellerbandet": "Spiller du trommer eller bass? Vi i Kjellerbandet trenger nye medlemmer! Søk for å få muligheten til å både lære mye, spille med andre flinke folk og få masse nye venner! Send oss en mail på kb-styret@gmail.com eller send oss en melding på facebooksiden vår. ",
+    "Kjellerbandet": "Spiller du trommer eller bass? Vi i Kjellerbandet trenger nye medlemmer! Søk for å få muligheten til å både lære mye, spille med andre flinke folk og få masse nye venner! Send oss en mail på kb-sjef@samfundet.no eller send oss en melding på facebooksiden vår. ",
     "Leisure Suite Lovers": null,
     "S. Møller Storband":
       "S. Møller har opptak for vikar på bass og fast plass på trombone våren 2020.",
     "Snaustrinda Spelemannslag": "Snaustrinda har opptak, og ser etter fele, hardingfele, klarinett, fløyte, perk eller andre instrumenter som passer inn i folkemusikken. Vi har åpne øvelser torsdag 9. og torsdag 16. januar kl. 18.50.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
-    "Studentersamfundets Symfoniorkester": null
+    "Studentersamfundets Symfoniorkester": "Symforch søker slagverk og bratsj våren 2020. Meld interesse på mail eller via facebooksiden vår innen 1. januar."
   };
 
   let leaders = data.contacts.filter(contact =>
