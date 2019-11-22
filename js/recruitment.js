@@ -13,7 +13,7 @@ function onRecruitmentLoaded(data) {
   ];
 
   let leaderInBand = {
-    "kb-leder": ["Kjellerbandet", "kb-styret@samfundet.no"],
+    "kb-leder": ["Kjellerbandet", "kb-styret@gmail.com"],
     "lsl-leder": ["Leisure Suite Lovers", "lsl@samfundet.no"],
     "smoller-leder": ["S. Møller Storband", "post@smoller.no"],
     "snau-leder": [
