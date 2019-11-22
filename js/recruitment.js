@@ -13,7 +13,7 @@ function onRecruitmentLoaded(data) {
   ];
 
   let leaderInBand = {
-    "kb-leder": ["Kjellerbandet", "kb@samfundet.no"],
+    "kb-leder": ["Kjellerbandet", "kb-styret@samfundet.no"],
     "lsl-leder": ["Leisure Suite Lovers", "lsl@samfundet.no"],
     "smoller-leder": ["S. Møller Storband", "post@smoller.no"],
     "snau-leder": [
@@ -31,7 +31,7 @@ function onRecruitmentLoaded(data) {
   };
 
   let availableSeatsInBand = {
-    "Kjellerbandet": null,
+    "Kjellerbandet": "Spiller du trommer eller bass? Vi i Kjellerbandet trenger nye medlemmer! Søk for å få muligheten til å både lære mye, spille med andre flinke folk og få masse nye venner! Send oss en mail på kb-styret@gmail.com eller send oss en melding på facebooksiden vår. ",
     "Leisure Suite Lovers": null,
     "S. Møller Storband":
       "S. Møller har opptak for vikar på bass og fast plass på trombone våren 2020.",
