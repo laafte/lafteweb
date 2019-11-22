@@ -38,7 +38,7 @@ function onRecruitmentLoaded(data) {
     "Snaustrinda Spelemannslag": "Snaustrinda har opptak, og ser etter fele, hardingfele, klarinett, fløyte, perk eller andre instrumenter som passer inn i folkemusikken. Vi har åpne øvelser torsdag 9. og torsdag 16. januar kl. 18.50.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
-    "Studentersamfundets Symfoniorkester": null
+    "Studentersamfundets Symfoniorkester": "Symforch søker slagverk og bratsj våren 2020. Meld interesse på mail eller via facebooksiden vår innen 1. januar."
   };
 
   let leaders = data.contacts.filter(contact =>
