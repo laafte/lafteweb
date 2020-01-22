@@ -1,99 +1,138 @@
 <html lang="nb-NO">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Låfteweb | Opptak</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/lafte.ico"/>
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/hamburger.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/recruitment.css">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/lafte.ico"
+    />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/recruitment.css" />
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/recruitment.js"></script>
-</head>
-<body>
-    <a href="#main-content" class="jump-link">Hopp til hovedinnhold</a>
-    <header>
-        <div class="header-heading">
-            <div class="header-heading-logo-container">
-                <img src="../assets/img/låfte_lysbakgrunn.png" alt="Logo til Låfteweb" width="70" height="70">
-            </div>
-            <div class="header-text">
-                <h1>Studentersamfundets Orkester</h1>
-                <p class="leader-info">Orkestersjef:</p>
-            </div>
+  </head>
+  <body>
+    <a tabindex="0" href="#mainContent" class="jump-link"
+      >Hopp til hovedinnhold</a
+    >
+    <header id="header">
+      <div class="row">
+        <a tabindex="0" href="../index.html">
+          <img
+            class="header-icon"
+            src="../../assets/img/låfte_lysbakgrunn.png"
+            alt="Låftelogo"
+          />
+        </a>
+        <div class="col">
+          <h1 class="header-title">Studentersamfundets Orkester</h1>
+          <p class="leader-info">Orkestersjef:</p>
         </div>
-        <div class="navigation">
-            <nav class="nav-web">
-                <a href="../index.html">Hjem</a>
-                <a href="#" class="selected">Opptak</a>
-                <a href="contact.html">Kontakt</a>
-                <a href="about.html">Om</a>
-                <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
-            </nav>
-            <div class="hamburger hamburger--slider toggle-navbar hidden">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </div>
-        </div>
+        <a class="hamburger-menu" onclick="return toggleMobileNav()">
+          <img
+            id="hamburgerIcon"
+            class="header-icon"
+            src="../../assets/img/menu.svg"
+            alt="Menu icon"
+          />
+        </a>
+        <nav class="nav-web">
+          <a tabindex="0" href="../../index.html">Hjem</a>
+          <a tabindex="0" href="" class="selected">Opptak</a>
+          <a tabindex="0" href="contact.html">Kontakt</a>
+          <a tabindex="0" href="about.html">Om</a>
+          <a
+            tabindex="0"
+            target="_blank"
+            href="https://laafte.samfundet.no/ovingsspeilet/"
+            ><span
+              >Øvingspeilet <span class="fas fa-external-link-alt"></span></span
+          ></a>
+        </nav>
+      </div>
     </header>
-    <nav class="nav-mobile activate-hamburger">
-            <a href="../index.html">Hjem</a>
-            <a href="#" class="selected">Opptak</a>
-            <a href="contact.html">Kontakt</a>
-            <a href="about.html">Om</a>
-            <a href="https://laafte.samfundet.no/ovingsspeilet/"><span>Øvingspeilet <span class='fas fa-external-link-alt'></span></span></a>
+    <nav id="mobileNav" class="nav-mobile">
+      <a tabindex="0" href="../../index.html">Hjem</a>
+      <a tabindex="0" href="" class="selected">Opptak</a>
+      <a tabindex="0" href="contact.html">Kontakt</a>
+      <a tabindex="0" href="about.html">Om</a>
+      <a
+        tabindex="0"
+        target="_blank"
+        href="https://laafte.samfundet.no/ovingsspeilet/"
+        ><span>Øvingspeilet <span class="fas fa-external-link-alt"></span></span
+      ></a>
     </nav>
-    <main class="content-container" id="main-content">
-        <div class="heading">
-            <h3>Opptak</h3>
-            <p>Her finner du informasjon om hvilke undergrupperinger som har opptak og hvilke instrumenter som søkes.</p>
-        </div>
-        <div id="band-reqruitment-container">
-            <noscript>
-                <p>
-                    Det ser ut til at du ikke har støtte for JavaScript. Dette trengs for å laste inn opptaksinformasjon.
-                </p>
-            </noscript>
-        </div>
+    <main id="mainContent">
+      <div class="content-pusher"></div>
+      <!-- Tenker det kan være lurt å indikere for hvilket semester informasjonen er gyldig -->
+      <h1>Opptak våren 2020</h1>
+      <p>
+        Her finner du informasjon om hvilke undergrupperinger som har opptak
+        dette semesteret, og om hvilke instrumenter som søkes.
+      </p>
+      <div id="band-recruitment-container">
+        <noscript>
+          <p>
+            Det ser ut til at du ikke har støtte for JavaScript. Dette trengs
+            for å laste inn opptaksinformasjon.
+          </p>
+        </noscript>
+      </div>
     </main>
     <footer>
-            <div class="left-img-container">
-                <img class="left-img" src="/assets/img/logo_ntnu_u-slagord.png" alt="NTNU">
-            </div>
-            <div class="center-module">
-                <p class="leader-info">Orkestersjef: </p>
-                <p> &copy; låfteweb 2019</p>
-                <p>www.samfundet.no</p>
-            </div>
-            <div class="right-img-container">
-                <img class="right-img" src="/assets/img/vtlogo.png" alt="Velferdstinget">
-            </div>
-        </footer>
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-    </script>
+      <div class="row">
+        <div class="contact-info">
+          <p class="leader-info">Orkestersjef:</p>
+          <p>&copy; låfteweb 2019</p>
+          <p><a href="https://samfundet.no">www.samfundet.no</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="image-container">
+          <a href="https://ntnu.no"><img src="/assets/img/logo_ntnu_compact.png" alt="NTNU-logo" /></a>
+        </div>
+        <div class="image-container">
+          <a href="https://velferdstinget.no"><img src="/assets/img/vtlogo.png" alt="Velferdstingets logo" /></a>
+        </div>
+      </div>
+    </footer>
     <script>
-        $(document).ready(function(){
-            let navMobile = $(".nav-mobile")
-            let toggleNavbar = $(".toggle-navbar")
-            let hamburger = $(".hamburger")
+      let header = document.getElementById("header");
+      let hamburgerIcon = document.getElementById("hamburgerIcon");
+      let mobileNav = document.getElementById("mobileNav");
+      let mainContent = document.getElementById("mainContent");
 
-            // Hide mobile menu if we have js, show button
-            navMobile.removeClass("activate-hamburger");
-            toggleNavbar.removeClass("hidden");
+      window.onload = function() {
+        placeMobileNav();
+      };
+      window.onresize = placeMobileNav;
 
-            toggleNavbar.click(function(){
-                navMobile.toggleClass("activate-hamburger");
-                hamburger.toggleClass("is-active");
-            })
-        })
+      function placeMobileNav() {
+        mobileNav.style.top = header.offsetHeight;
+      }
+
+      function placeMainContent() {}
+
+      function toggleMobileNav() {
+        if (hamburgerIcon.src.indexOf("close") != -1) {
+          hamburgerIcon.src = "../../assets/img/menu.svg";
+          mobileNav.style.display = "none";
+        } else {
+          hamburgerIcon.src = "../../assets/img/close.svg";
+          mobileNav.style.display = "flex";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>

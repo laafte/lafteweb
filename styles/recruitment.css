@@ -1,5 +1,5 @@
 /* General styles */
-/* 
+/*
 Things like background color, font-family etc.
 Common styles regardless of screen size.
 */
@@ -8,79 +8,31 @@ Common styles regardless of screen size.
 
 /* No media query, design for small phones first, then change CSS once screen gets bigger */
 
-.band {
-    margin-top: 30px;
-}
-
-.band h2 {
-    /* font-weight: bold; */
-    font-size: 18pt;
-}
-
-.band h4 {
-    font-weight: 5;
-    font-size: 9pt;
-    margin-top: 1; 
-    padding-bottom: 1,
-}
-
-.band p {
-    font-size: 8pt;
+main {
+  padding: 5% 10%;
 }
 
 /* Smartphones, landscape */
 
-@media only screen and (min-width: 500px){
-
-
+@media only screen and (min-width: 500px) {
 }
 
 /* Tablets, portrait */
 
 @media only screen and (min-width: 768px) {
-    
-    .band h2 {
-        font-size: 30pt;
-    }
-    
-    .band h4 {
-        font-size: 20pt;
-    }
-    
 }
-
 
 /* Tablets, landscape */
 
 @media only screen and (min-width: 992px) {
-    
 }
 
 /* Laptops and desktops */
 
 @media only screen and (min-width: 1200px) {
-    
-    .band {
-        margin-top: 40px;
-    }
-    
-    .band h2 {
-        font-weight: bolder;
-        font-size: 30pt;
-    }
-    
-    .band h4 {
-        font-size: 16pt;
-    }
-    
-    .band p {
-        font-size: 14pt;
-    }
 }
-
 
 /* Large screens */
 
 @media only screen and (min-width: 1600px) {
-    
 }
