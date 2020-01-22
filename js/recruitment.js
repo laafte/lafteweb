@@ -32,9 +32,9 @@ function onRecruitmentLoaded(data) {
 
   let availableSeatsInBand = {
     "Kjellerbandet": "Spiller du trommer eller bass? Vi i Kjellerbandet trenger nye medlemmer! Søk for å få muligheten til å både lære mye, spille med andre flinke folk og få masse nye venner! Send oss en mail på kb-sjef@samfundet.no eller send oss en melding på facebooksiden vår. ",
-    "Leisure Suite Lovers": "Fikk du ikke plass i LSL under juletreet? Fortvil ikke, nå har du sjansen! Vi søker ny kvinnelig korist som kan glitre og groove på scenen!!💃 Alt du trenger å gjøre er å sende en liten søknad til lsl@samfundet.no innen 19. januar og kom på opptak!",
+    "Leisure Suite Lovers": "Opptaket for 2020 er gjennomført.",
     "S. Møller Storband":
-      "S. Møller har opptak for vikar på bass og fast plass på trombone våren 2020.",
+      "S. Møller har løpende opptak for vikar på bass dette semesteret.",
     "Snaustrinda Spelemannslag": "Snaustrinda har opptak, og ser etter fele, hardingfele, klarinett, fløyte, perk eller andre instrumenter som passer inn i folkemusikken. Vi har åpne øvelser torsdag 9. og torsdag 16. januar kl. 18.50.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
