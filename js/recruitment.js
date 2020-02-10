@@ -35,7 +35,7 @@ function onRecruitmentLoaded(data) {
     "Leisure Suite Lovers": null,
     "S. Møller Storband":
       "S. Møller har løpende opptak for vikar på bass dette semesteret.",
-    "Snaustrinda Spelemannslag": "Snaustrinda har opptak, og ser etter fele, hardingfele, klarinett, fløyte, perk eller andre instrumenter som passer inn i folkemusikken. Vi har åpne øvelser torsdag 9. og torsdag 16. januar kl. 18.50.",
+    "Snaustrinda Spelemannslag": null,
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": "Symforch søker slagverk våren 2020!"
