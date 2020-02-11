@@ -31,7 +31,7 @@ function onRecruitmentLoaded(data) {
   };
 
   let availableSeatsInBand = {
-    "Kjellerbandet": "Spiller du trommer eller bass? Vi i Kjellerbandet trenger nye medlemmer! Søk for å få muligheten til å både lære mye, spille med andre flinke folk og få masse nye venner! Send oss en mail på kb-sjef@samfundet.no eller send oss en melding på facebooksiden vår. ",
+    "Kjellerbandet": null,
     "Leisure Suite Lovers": null,
     "S. Møller Storband":
       "S. Møller har løpende opptak for vikar på bass dette semesteret.",
