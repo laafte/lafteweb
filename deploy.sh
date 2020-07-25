@@ -15,9 +15,11 @@ read CONFIRMATION
 if [ $CONFIRMATION == "y" ]
 then
     cp -r -v $DEPLOY_FILES $DEPLOY_DIR
+    chmod -R g+wx $DEPLOY_DIR
 elif [ $CONFIRMATION == "Y" ]
 then
     cp -r -v $DEPLOY_FILES $DEPLOY_DIR
+    chmod -R g+wx $DEPLOY_DIR
 else
     echo "Aborting"
 fi
