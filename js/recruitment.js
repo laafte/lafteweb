@@ -31,11 +31,14 @@ function onRecruitmentLoaded(data) {
   };
 
   let availableSeatsInBand = {
-    "Kjellerbandet": null,
-    "Leisure Suite Lovers": null,
+    "Kjellerbandet": 
+      "KB søker til høsten to tenorsaxofoner og en pianist",
+    "Leisure Suite Lovers": 
+      "Spiller du trompet? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
     "S. Møller Storband":
       "S. Møller har løpende opptak for vikar på bass dette semesteret.",
-    "Snaustrinda Spelemannslag": null,
+    "Snaustrinda Spelemannslag": 
+      "Vi søker nye musikarar på fele, gitar, kontrabass, trekkspel, klarinett og fløyte.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": "Symforch søker slagverk våren 2020!"
