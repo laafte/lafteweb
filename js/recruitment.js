@@ -36,12 +36,13 @@ function onRecruitmentLoaded(data) {
     "Leisure Suite Lovers": 
       "Spiller du trompet? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
     "S. Møller Storband":
-      "S. Møller har løpende opptak for vikar på bass dette semesteret.",
+      "S. Møller har opptak på flere instrumenter, vennligst ta kontakt hvis du vil lære mer.",
     "Snaustrinda Spelemannslag": 
       "Vi søker nye musikarar på fele, gitar, kontrabass, trekkspel, klarinett og fløyte.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
-    "Studentersamfundets Symfoniorkester": "Symforch søker slagverk våren 2020!"
+    "Studentersamfundets Symfoniorkester": 
+      "Symforch søke trombone, fløyte og obo, men alle som spiller et instrument og tenker seg å søke er invitert til åpen øvelse <a href="https://www.facebook.com/events/4114562965282491/">18. august</a>."
   };
 
   let leaders = data.contacts.filter(contact =>
