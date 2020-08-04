@@ -10,7 +10,7 @@ function onRecruitmentLoaded(data) {
     "snau-leder",
     "salong-leder",
     "symforch-formann",
-    "sfo-leder"
+    "sfo"
   ];
 
   let leaderInBand = {
@@ -29,7 +29,7 @@ function onRecruitmentLoaded(data) {
       "Studentersamfundets Symfoniorkester",
       "symforch-formann@samfundet.no"
     ],
-    "sfo-leder": [
+    "sfo": [
       "Samfundets Fusion Orkester", 
       "laafte-sfo@samfundet.no"]
   };
@@ -46,7 +46,7 @@ function onRecruitmentLoaded(data) {
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": 
-      "Symforch søker trombone, fløyte og obo, men alle som spiller et instrument og ønsker å søke er invitert til åpen øvelse <a href="https://www.facebook.com/events/4114562965282491/">18. august</a>.",
+      "Symforch søker trombone, fløyte og obo, men alle som spiller et instrument og ønsker å søke er invitert til åpen øvelse <a href=\"https://www.facebook.com/events/4114562965282491/\">18. august</a>.",
     "Samfundets Fusion Orkester":
       "SFO har opptak på gitar! Ta kontakt hvis du er interessert." 
   };
