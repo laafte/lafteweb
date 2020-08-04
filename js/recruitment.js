@@ -29,7 +29,7 @@ function onRecruitmentLoaded(data) {
       "Studentersamfundets Symfoniorkester",
       "symforch-formann@samfundet.no"
     ],
-    "sfo": [
+    "sfo-leder": [
       "Samfundets Fusion Orkester", 
       "laafte-sfo@samfundet.no"]
   };
