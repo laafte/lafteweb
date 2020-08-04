@@ -10,7 +10,7 @@ function onRecruitmentLoaded(data) {
     "snau-leder",
     "salong-leder",
     "symforch-formann",
-    "sfo"
+    "sfo-leder"
   ];
 
   let leaderInBand = {
