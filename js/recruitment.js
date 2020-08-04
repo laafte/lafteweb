@@ -9,12 +9,13 @@ function onRecruitmentLoaded(data) {
     "smoller-leder",
     "snau-leder",
     "salong-leder",
-    "symforch-formann"
+    "symforch-formann",
+    "sfo-leder"
   ];
 
   let leaderInBand = {
     "kb-leder": ["Kjellerbandet", "kb-sjef@samfundet.no"],
-    "lsl-leder": ["Leisure Suite Lovers", "lsl@samfundet.no"],
+    "lsl-leder": ["Leisure Suit Lovers", "lsl@samfundet.no"],
     "smoller-leder": ["S. Møller Storband", "post@smoller.no"],
     "snau-leder": [
       "Snaustrinda Spelemannslag",
@@ -27,7 +28,10 @@ function onRecruitmentLoaded(data) {
     "symforch-formann": [
       "Studentersamfundets Symfoniorkester",
       "symforch-formann@samfundet.no"
-    ]
+    ],
+    "sfo-leder": [
+      "Samfundets Fusion Orkester", 
+      "laafte-sfo@samfundet.no"]
   };
 
   let availableSeatsInBand = {
@@ -42,7 +46,9 @@ function onRecruitmentLoaded(data) {
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": 
-      "Symforch søker trombone, fløyte og obo, men alle som spiller et instrument og ønsker å søke er invitert til åpen øvelse <a href="https://www.facebook.com/events/4114562965282491/">18. august</a>."
+      "Symforch søker trombone, fløyte og obo, men alle som spiller et instrument og ønsker å søke er invitert til åpen øvelse <a href=\"https://www.facebook.com/events/4114562965282491/\">18. august</a>.",
+    "Samfundets Fusion Orkester":
+      "SFO har opptak på gitar! Ta kontakt hvis du er interessert." 
   };
 
   let leaders = data.contacts.filter(contact =>
