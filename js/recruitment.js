@@ -40,7 +40,7 @@ function onRecruitmentLoaded(data) {
     "Leisure Suit Lovers": 
       "Spiller du trompet? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
     "S. Møller Storband":
-      "S. Møller har opptak på flere instrumenter, vennligst ta kontakt om du vil vite mer.",
+      "S. Møller søker gitar og trompet, og ønsker at interesserte sender mail med opptak av seg selv + litt info om hvem de er og hva de holder på med. Aktuelle søkere kan bli innkalt til fysisk prøvespill, men det vurderer vi etter antall søkere.",
     "Snaustrinda Spelemannslag": 
       "Vi søker nye musikarar på fele, gitar, kontrabass, trekkspel, klarinett og fløyte.",
     "Studentersamfundets Salongsorkester":
