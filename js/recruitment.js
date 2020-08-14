@@ -44,7 +44,7 @@ function onRecruitmentLoaded(data) {
     "Snaustrinda Spelemannslag": 
       "Vi søker nye musikarar på fele, gitar, kontrabass, trekkspel, klarinett og fløyte.",
     "Studentersamfundets Salongsorkester":
-      "Se <a href=\"http://salong.samfundet.no/\">Salongorkesterets egne nettsider</a> for mer informasjon om opptak.",
+      "Se <a href=\"https://www.facebook.com/studentersamfundetssalongorkester/\">Salongorkesterets Facebookside</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": 
       "Symforch søker trombone, fløyte og obo, men alle som spiller et instrument og ønsker å søke er invitert til åpen øvelse <a href=\"https://www.facebook.com/events/4114562965282491/\">18. august</a>.",
     "Samfundets Fusion Orkester":
