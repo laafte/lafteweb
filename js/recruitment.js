@@ -36,19 +36,19 @@ function onRecruitmentLoaded(data) {
 
   let availableSeatsInBand = {
     "Kjellerbandet": 
-      "KB søker til høsten to tenorsaxofoner og en pianist",
+      "KB har ikke opptak i Vår 2021.",
     "Leisure Suit Lovers": 
-      "Spiller du trompet? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
+      "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
     "S. Møller Storband":
-      "S. Møller søker gitar og trompet, og ønsker at interesserte sender mail med opptak av seg selv + litt info om hvem de er og hva de holder på med. Aktuelle søkere kan bli innkalt til fysisk prøvespill, men det vurderer vi etter antall søkere.",
+      "S. Møller søker trompet, vokal og tenorsaksofon, og ønsker at interesserte sender mail med opptak av seg selv + litt info om hvem de er og hva de holder på med. Aktuelle søkere kan bli innkalt til fysisk prøvespill, men det vurderer vi etter antall søkere.",
     "Snaustrinda Spelemannslag": 
-      "Vi søker nye musikarar på fele, gitar, kontrabass, trekkspel, klarinett og fløyte.",
+      "Vi søkjer nye musikarar på gitar, kontrabass og trekkspel, men alle som er interessert i folkemusikk og speler eit instrument er velkomen på open øving! Sjå <a href=\"https://facebook.com/Snaustrinda/\">Facebook-sida vår</a> for meir info.",
     "Studentersamfundets Salongsorkester":
       "Se <a href=\"https://www.facebook.com/studentersamfundetssalongorkester/\">Salongorkesterets Facebookside</a> for mer informasjon om opptak.",
     "Studentersamfundets Symfoniorkester": 
-      "Symforch søker trombone, fløyte og obo, men alle som spiller et instrument og ønsker å søke er invitert til åpen øvelse <a href=\"https://www.facebook.com/events/4114562965282491/\">18. august</a>.",
+      "Symforch søker nye trombonister.",
     "Samfundets Fusion Orkester":
-      "SFO har opptak på gitar! Ta kontakt hvis du er interessert." 
+      "SFO har opptak på saksofon! Ta kontakt hvis du er interessert." 
   };
 
   let leaders = data.contacts.filter(contact =>
