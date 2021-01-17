@@ -36,7 +36,7 @@ function onRecruitmentLoaded(data) {
 
   let availableSeatsInBand = {
     "Kjellerbandet": 
-      "KB har ikke opptak i Vår 2021.",
+      "KB har ikke opptak våren 2021.",
     "Leisure Suit Lovers": 
       "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
     "S. Møller Storband":
