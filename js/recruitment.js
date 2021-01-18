@@ -37,7 +37,7 @@ function onRecruitmentLoaded(data) {
   let availableSeatsInBand = {
     "Kjellerbandet": null,
     "Leisure Suit Lovers": 
-      "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semester V21! Søk søk søk!",
+      "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad tenorsaxofonist kommende semester V21! Søk søk søk!",
     "S. Møller Storband":
       "S. Møller søker trompet, vokal og tenorsaksofon, og ønsker at interesserte sender mail med opptak av seg selv + litt info om hvem de er og hva de holder på med. Aktuelle søkere kan bli innkalt til fysisk prøvespill, men det vurderer vi etter antall søkere.",
     "Snaustrinda Spelemannslag": 
