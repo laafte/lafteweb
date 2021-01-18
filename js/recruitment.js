@@ -35,7 +35,7 @@ function onRecruitmentLoaded(data) {
   };
 
   let availableSeatsInBand = {
-    "Kjellerbandet": ,
+    "Kjellerbandet": null,
     "Leisure Suit Lovers": 
       "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semester V21! Søk søk søk!",
     "S. Møller Storband":
