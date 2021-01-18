@@ -35,10 +35,9 @@ function onRecruitmentLoaded(data) {
   };
 
   let availableSeatsInBand = {
-    "Kjellerbandet": 
-      "KB har ikke opptak våren 2021.",
+    "Kjellerbandet": ,
     "Leisure Suit Lovers": 
-      "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semestester H20! Søk søk søk!",
+      "Spiller du tenorsax? Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad trompetist kommende semester V21! Søk søk søk!",
     "S. Møller Storband":
       "S. Møller søker trompet, vokal og tenorsaksofon, og ønsker at interesserte sender mail med opptak av seg selv + litt info om hvem de er og hva de holder på med. Aktuelle søkere kan bli innkalt til fysisk prøvespill, men det vurderer vi etter antall søkere.",
     "Snaustrinda Spelemannslag": 
@@ -69,7 +68,7 @@ function onRecruitmentLoaded(data) {
         <h4>Ledige plasser:</h4>
         ${
       availableSeats == null
-        ? "<p class='longer-text'><span style='font-style: italic'>Opptaket for våren 2020 er gjennomført.</span></p>"
+        ? "<p class='longer-text'><span style='font-style: italic'>Ingen opptak dette semesteret. </span></p>"
         : `<p class='longer-text'>${availableSeats}</p><p class='longer-text'><p class="longer-text"> Send epost til <a style = " white-space:nowrap; " href="mailto:${
         leader.email == null
           ? leaderInBand[leader.role][1]
