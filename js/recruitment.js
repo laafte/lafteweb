@@ -38,13 +38,13 @@ function onRecruitmentLoaded(data) {
     "Kjellerbandet": 
       "KB har opptak på piano! Ta kontakt hvis du er interessert.",
     "Leisure Suit Lovers": "Er du interessert i Disco? Liker du ABBA, Earth, Wind & Fire og andre 70/80-talls hits? Søk Leisure Suit Lovers! LSL søker en discoglad musiker på trompet til V22! Søk søk søk!",
-    "S. Møller Storband": null, // "S. Møller har opptak på tenorsaks, altsaksofon, trompet og trombone, og ønsker at interesserte sender mail med opptak av seg selv + litt info om hvem de er og hva de holder på med. Aktuelle søkere kan bli innkalt til fysisk prøvespill, men det vurderer vi etter antall søkere.",
+    "S. Møller Storband": null, 
     "Snaustrinda Spelemannslag": 
       "Vi søkjer nye musikarar på gitar, kontrabass, blås og trekkspel, men alle som er interessert i folkemusikk og speler eit instrument er velkomen på open øving! Sjå <a href=\"https://facebook.com/Snaustrinda/\">Facebook-sida vår</a> for meir info.",
     "Studentersamfundets Salongsorkester": null,
     "Studentersamfundets Symfoniorkester": 
       "Symforch har opptak på obo og fiolin! Send en e-post hvis du er interessert. 🎻🎻🎻",
-    "Samfundets Fusion Orkester": null // "SFO har opptak på keyboard og trommer! Ta kontakt hvis du er interessert." 
+    "Samfundets Fusion Orkester": null 
   };
 
   let leaders = data.contacts.filter(contact =>
