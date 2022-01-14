@@ -27,7 +27,7 @@ function onRecruitmentLoaded(data) {
     ],
     "symforch-formann": [
       "Studentersamfundets Symfoniorkester",
-      "symforch-formann@samfundet.no"
+      "symforch-leder@samfundet.no"
     ],
     "sfo-leder": [
       "Samfundets Fusion Orkester", 
