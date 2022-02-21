@@ -1,3 +1,3 @@
 export let contactInfoRequest =
-  fetch('https://laafte.samfundet.no/api/kontaktinfo/')
+  fetch('../api/kontaktinfo/')
     .then(response => response.json());

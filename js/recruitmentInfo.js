@@ -1,3 +1,3 @@
 export let recruitmentInfoRequest =
-  fetch('https://laafte.samfundet.no/api/rekruteringsinfo/')
+  fetch('../api/rekruteringsinfo/')
     .then(response => response.json());
