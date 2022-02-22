@@ -9,22 +9,22 @@ import { recruitmentInfoRequest } from './recruitmentInfo.js';
 let contactInfo = null;
 let recruitmentInfo = null;
 
-const contactLoaded = (data) => {
+function contactLoaded(data) {
   contactInfo = data;
-  if(recruitmentInfo != null) {
+  if (recruitmentInfo != null) {
     createHTML(contactInfo, recruitmentInfo);
   }
 }
 
-const recruitmentLoaded = (data) => {
+function recruitmentLoaded(data) {
   recruitmentInfo = data;
-  if(contactInfo != null) {
+  if (contactInfo != null) {
     createHTML(contactInfo, recruitmentInfo);
   }
 }
 
 // Listen for both fetches
-document.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', (event) => {
   contactInfoRequest.then(contactLoaded);
   recruitmentInfoRequest.then(recruitmentLoaded);
 });
@@ -56,7 +56,7 @@ function createWrapperTemplate() {
 }
 
 // only run when all data is ready
-const createHTML = (contactInfo, recruitmentInfo) => {
+function createHTML(contactInfo, recruitmentInfo) {
   let container = document.getElementById('band-recruitment-container');
 
   const nameMap = {
@@ -72,7 +72,7 @@ const createHTML = (contactInfo, recruitmentInfo) => {
 
   let baseWrapperNode = createWrapperTemplate(); 
   
-  for(let i = 0; i < recruitmentInfo.length; i++) {
+  for (let i = 0; i < recruitmentInfo.length; i++) {
     // Make sure this group is active before rendering
     let isActive = recruitmentInfo[i].aktiv;
     if(!isActive) {
@@ -98,8 +98,8 @@ const createHTML = (contactInfo, recruitmentInfo) => {
     
     // Setup contents
     // No recruitment text is interpreted as no free positions
-    if(recrText === null || recrText === '') {
-      recrText = 'Ingen opptak dette semesteret.'
+    if (recrText === null || recrText === '') {
+      recrText = 'Intet opptak dette semesteret.';
       recrTextNode.style.fontStyle = 'italic';
       recruiting = false;
     }
@@ -115,7 +115,7 @@ const createHTML = (contactInfo, recruitmentInfo) => {
 
     // Contact information
     // Only add if actually recruiting
-    if(recruiting) {
+    if (recruiting) {
       contactLink.href='mailto:' + contactAddr + '?subject=Opptak';
       contactLink.textContent = contactAddr;
       

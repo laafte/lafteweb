@@ -1,3 +1,3 @@
 export let recruitmentInfoRequest =
-  fetch('../api/rekruteringsinfo/')
+  fetch('/api/rekruteringsinfo/')
     .then(response => response.json());
