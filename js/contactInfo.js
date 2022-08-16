@@ -1,3 +1,3 @@
 export let contactInfoRequest =
-  fetch('/api/kontaktinfo/')
-    .then(response => response.json());
+    fetch('/api/kontaktinfo/')
+    .then((response) => response.json())
