@@ -41,40 +41,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-// Not regex parsable?
-function replaceLineBreakWith(inputString, replacement) {
-  let resultString = "";
-  
-  for (let i = 0; i < inputString.length - 1; i++) {
-    let lookaheadIndex = i + 1;
-    let curChar = inputString[i];
-    let nextChar = inputString[lookaheadIndex];
-
-    if(curChar === '\r' && nextChar === '\n') {
-      resultString += replacement;
-      // Skip ahead, both \r and \n are consumed as a line break
-      i = i + 1;
-    }
-    else if(curChar === '\r' || nextChar === '\n') {
-      resultString += replacement
-    }
-    else {
-      resultString += curChar
-    }
-  }
-
-  // Final character
-  let lastChar = inputString[inputString.length - 1]
-  if(lastChar === '\r' || lastChar === '\n') {
-    resultString += replacement
-  }
-  else {
-    resultString += lastChar
-  }
-  
-  return resultString
-}
-
 // We create a reusable template for the content
 // This approach makes it easier to avoid .innerHMTL to the benefit of .textContent,
 // reducing the need for trusting/sanitising our input. It's also faster (presumably)!
@@ -102,9 +68,17 @@ function createWrapperTemplate() {
 
 // Only run when all data is ready
 function createHTML(contactInfo, recruitmentInfo) {
-  let container = document.getElementById('band-recruitment-container');
+  const container = document.getElementById('band-recruitment-container');
+  setupRecruitmentText(container, contactInfo, recruitmentInfo)
 
-  const nameMap = {
+  const headerNode = document.getElementById('recruitment-header');
+  setupHeader(headerNode);
+  
+}
+  
+
+function setupRecruitmentText(containerNode, contactInfo, recruitmentInfo) {
+    const nameMap = {
     'lsl': 'Leisure Suit Lovers',
     'kb': 'Kjellerbandet',
     'salongen': 'Studentersamfundets Salongorkester',
@@ -114,9 +88,8 @@ function createHTML(contactInfo, recruitmentInfo) {
     'symforch': 'Studentersamfundets Symfoniorkester'
   };
 
-
   let baseWrapperNode = createWrapperTemplate();
-
+  
   for (let i = 0; i < recruitmentInfo.length; i++) {
     // Make sure this group is active before rendering
     let isActive = recruitmentInfo[i].aktiv;
@@ -170,6 +143,55 @@ function createHTML(contactInfo, recruitmentInfo) {
       contactTextNode.append(document.createTextNode(' for å melde interesse.'));
     }
     // Add finished DOM tree to main container
-    container.append(wrapperNode);
+    containerNode.append(wrapperNode);
   }
+}
+
+function setupHeader(targetNode) {
+  const currentSemesterText = getCurrentSemesterString();
+  const headerText = `Opptak ${currentSemesterText}`
+
+  targetNode.textContent = headerText;
+}
+
+function getCurrentSemesterString() {
+  const curDate = new Date();
+  const curYearString = curDate.getFullYear().toString();
+  const curSeasonString = curDate.getMonth() <= 6 ? "våren" : "høsten"
+
+  return `${curSeasonString} ${curYearString}`
+}
+
+
+function replaceLineBreakWith(inputString, replacement) {
+  let resultString = "";
+  
+  for (let i = 0; i < inputString.length - 1; i++) {
+    let lookaheadIndex = i + 1;
+    let curChar = inputString[i];
+    let nextChar = inputString[lookaheadIndex];
+
+    if(curChar === '\r' && nextChar === '\n') {
+      resultString += replacement;
+      // Skip ahead, both \r and \n are consumed as a line break
+      i = i + 1;
+    }
+    else if(curChar === '\r' || nextChar === '\n') {
+      resultString += replacement
+    }
+    else {
+      resultString += curChar
+    }
+  }
+
+  // Final character
+  let lastChar = inputString[inputString.length - 1]
+  if(lastChar === '\r' || lastChar === '\n') {
+    resultString += replacement
+  }
+  else {
+    resultString += lastChar
+  }
+  
+  return resultString
 }

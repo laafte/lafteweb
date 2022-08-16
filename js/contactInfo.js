@@ -1,3 +1,5 @@
+import {config} from "./config.js"
+
 export let contactInfoRequest =
-  fetch('/api/kontaktinfo/')
-    .then((response) => response.json())
+  fetch(config.paths.kontaktApi)
+  .then((response) => response.json())

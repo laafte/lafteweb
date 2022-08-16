@@ -1,2 +1,4 @@
+import {config} from "./config.js"
+
 export let recruitmentInfoRequest =
-  fetch('/api/rekruteringsinfo/')
+  fetch(config.paths.rekruteringsApi)
