@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recruitmentInfoRequest
     .then((response) => response.text())
     .then((responseText) => {
+      // TODO Need to restructure the api so that it returns valid json
       const JsonTextWithBreakTags = replaceLineBreakWith(responseText, '<br/>')
-      console.log(JsonTextWithBreakTags)
       return JSON.parse(JsonTextWithBreakTags)
     })
     .then(recruitmentLoaded);
@@ -78,14 +78,15 @@ function createHTML(contactInfo, recruitmentInfo) {
   
 
 function setupRecruitmentText(containerNode, contactInfo, recruitmentInfo) {
-    const nameMap = {
+  const nameMap = {
     'lsl': 'Leisure Suit Lovers',
     'kb': 'Kjellerbandet',
     'salongen': 'Studentersamfundets Salongorkester',
     'revy': 'Revybandet',
     'smoller': 'S. Møller Storband',
     'sfo': 'Samfundets Fusion Orkester',
-    'symforch': 'Studentersamfundets Symfoniorkester'
+    'symforch': 'Studentersamfundets Symfoniorkester',
+    'snau': 'Snaustrinda Spelemannslag'
   };
 
   let baseWrapperNode = createWrapperTemplate();
